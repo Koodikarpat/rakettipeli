@@ -8,14 +8,14 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;
     public float thrust;
     public float rotationspeed;
-    public GameObject Fire;
+    //public GameObject Fire;
 
    
 
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
-        Fire.SetActive(false);
+        //Fire.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour {
            
             {
                 rb2d.AddForce(transform.up * thrust);
-                Fire.SetActive(true);
+                //Fire.SetActive(true);
             }
         }
 
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetButtonUp("Vertical"))
         {
-            Fire.SetActive(false);
+            //Fire.SetActive(false);
         }
 	}
 
