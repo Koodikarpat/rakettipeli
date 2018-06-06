@@ -16,7 +16,6 @@ public class AmmusInstantiate : MonoBehaviour {
             Rigidbody AmmusInstance;
             AmmusInstance = Instantiate (AmmusPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody;
             AmmusInstance.AddForce(ammuksenSuunta * ammuksenNopeus);
-            Debug.Log(barrelEnd.forward);
         }
 	}
 }
