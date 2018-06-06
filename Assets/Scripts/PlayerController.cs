@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
     public float thrust;
     public float rotationspeed;
     //public GameObject Fire;
-    private float level;
+    public float level;
     public GameObject[] Level1Barrels;
     public GameObject[] Level2Barrels;
     public GameObject ExplosionSprite;
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour {
                 ExplosionSprite.transform.position = gameObject.transform.position;
                 Destroy(gameObject);
                 ExplosionSprite.GetComponent<Animator>().Play("Explosion");
-                return;
+                
             }
         }
     }

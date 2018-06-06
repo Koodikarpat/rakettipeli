@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 50273510417703142}
   - component: {fileID: 114929715620684340}
   - component: {fileID: 61214412965800758}
+  - component: {fileID: 114033612812986474}
   m_Layer: 0
   m_Name: asteroidi
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,6 +89,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.99, y: 1.39}
   m_EdgeRadius: 0
+--- !u!114 &114033612812986474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1786181411833988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 1
+  Player: {fileID: 0}
 --- !u!114 &114929715620684340
 MonoBehaviour:
   m_ObjectHideFlags: 1

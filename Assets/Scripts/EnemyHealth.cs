@@ -23,10 +23,18 @@ public class EnemyHealth : MonoBehaviour {
         {
             HealthPoints--;
             Destroy(collision.gameObject);
-            if (HealthPoints <= 0)
-            {
-                Destroy(gameObject);
-            }
+            
+        }
+
+        if (collision.tag == "Player")
+        {
+            HealthPoints--;
+        }
+
+        if (HealthPoints <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("ded");
         }
     }
 }
