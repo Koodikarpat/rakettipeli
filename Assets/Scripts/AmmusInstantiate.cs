@@ -10,9 +10,10 @@ public class AmmusInstantiate : MonoBehaviour {
     public float ammuksenNopeus;
     private float Level;
     public GameObject Rocket;
+    
 
 
-	void Update () {
+    void Update () {
         ammuksenSuunta = Rocket.transform.up;
         if (Input.GetButtonDown("Fire1"))
         {
