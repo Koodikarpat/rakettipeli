@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         //Fire.SetActive(false);
-        level = 2;
+        level = 1;
         foreach (GameObject item in Level2Barrels)
         {
             item.SetActive(false);
@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (IsInvincible == false)
             {
-                StartCoroutine(Invincibility());
+                
                 Debug.Log("Met an enemy");
                 if (level == 3) //Laskeminen levelistä 3 leveliin 2.
                 {
@@ -150,7 +150,9 @@ public class PlayerController : MonoBehaviour {
                     ExplosionSprite.GetComponent<Animator>().Play("Explosion");
 
                 }
+            StartCoroutine(Invincibility());
             }
+         Debug.Log(level);
         }
     }
 }
