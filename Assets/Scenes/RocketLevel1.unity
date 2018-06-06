@@ -532,6 +532,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1558127183}
+  - {fileID: 1103116591}
+  - {fileID: 809100929}
+  - {fileID: 1760299081}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1147,8 +1150,9 @@ MonoBehaviour:
   AmmusPrefab: {fileID: 50587047171743646, guid: 0724f5511dc2b804ca6291711566cd60,
     type: 2}
   barrelEnd: {fileID: 364485245}
-  ammuksenNopeus: 2000
   Rocket: {fileID: 675462344}
+  ammuksenNopeus: 2000
+  fireRate: 0.5
 --- !u!1 &365679137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,36 +1514,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47cae0f9548daf6449a0d74769ab2fe6, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &651196625 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1042197469346158, guid: 47cae0f9548daf6449a0d74769ab2fe6,
-    type: 2}
-  m_PrefabInternal: {fileID: 576024523}
---- !u!61 &651196631
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 651196625}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.99, y: 1.39}
-    newSize: {x: 1.99, y: 1.39}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.99, y: 1.39}
-  m_EdgeRadius: 0
 --- !u!1 &670914333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,6 +2202,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &809100929 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4676297590707614, guid: 47cae0f9548daf6449a0d74769ab2fe6,
+    type: 2}
+  m_PrefabInternal: {fileID: 576024523}
 --- !u!1 &883433036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,11 +2656,11 @@ Transform:
   m_Father: {fileID: 912275615}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
---- !u!4 &1111195293 stripped
+--- !u!4 &1103116591 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4520792345249666, guid: 47cae0f9548daf6449a0d74769ab2fe6,
+  m_PrefabParentObject: {fileID: 4676297590707614, guid: 47cae0f9548daf6449a0d74769ab2fe6,
     type: 2}
-  m_PrefabInternal: {fileID: 576024523}
+  m_PrefabInternal: {fileID: 757135947}
 --- !u!1 &1370582999
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,8 +3057,9 @@ MonoBehaviour:
   AmmusPrefab: {fileID: 50587047171743646, guid: 0724f5511dc2b804ca6291711566cd60,
     type: 2}
   barrelEnd: {fileID: 1551628507}
-  ammuksenNopeus: 2000
   Rocket: {fileID: 675462344}
+  ammuksenNopeus: 2000
+  fireRate: 0.5
 --- !u!1001 &1558127182
 Prefab:
   m_ObjectHideFlags: 0
@@ -3628,6 +3608,11 @@ Transform:
   m_Father: {fileID: 912275615}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+--- !u!4 &1760299081 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4676297590707614, guid: 47cae0f9548daf6449a0d74769ab2fe6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1821619267}
 --- !u!1001 &1821619267
 Prefab:
   m_ObjectHideFlags: 0
@@ -3777,66 +3762,6 @@ Transform:
   m_Father: {fileID: 912275615}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1906228264 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1042197469346158, guid: 47cae0f9548daf6449a0d74769ab2fe6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1821619267}
---- !u!61 &1906228270
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1906228264}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.99, y: 1.39}
-    newSize: {x: 1.99, y: 1.39}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.99, y: 1.39}
-  m_EdgeRadius: 0
---- !u!1 &1957169536 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1042197469346158, guid: 47cae0f9548daf6449a0d74769ab2fe6,
-    type: 2}
-  m_PrefabInternal: {fileID: 757135947}
---- !u!61 &1957169542
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1957169536}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.99, y: 1.39}
-    newSize: {x: 1.99, y: 1.39}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.99, y: 1.39}
-  m_EdgeRadius: 0
 --- !u!1 &2009745833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,8 +3905,9 @@ MonoBehaviour:
   AmmusPrefab: {fileID: 50587047171743646, guid: 0724f5511dc2b804ca6291711566cd60,
     type: 2}
   barrelEnd: {fileID: 2050059792}
-  ammuksenNopeus: 2000
   Rocket: {fileID: 675462344}
+  ammuksenNopeus: 2000
+  fireRate: 0.5
 --- !u!1 &2052474672
 GameObject:
   m_ObjectHideFlags: 0
