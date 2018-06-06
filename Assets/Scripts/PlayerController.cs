@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour {
     public GameObject[] Level1Barrels;
     public GameObject[] Level2Barrels;
     public GameObject ExplosionSprite;
+    public float InvincibilityTime;
+    public float InvincibilitySpeed;
+    private bool IsInvincible;
 
 
    
@@ -21,12 +24,42 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         //Fire.SetActive(false);
-        level = 1;
+        level = 2;
         foreach (GameObject item in Level2Barrels)
         {
             item.SetActive(false);
         }
 	}
+
+    IEnumerator Invincibility()
+    {
+        IsInvincible = true;
+        gameObject.tag = "Untagged";
+        gameObject.layer = 10;
+        Debug.Log(gameObject.layer);
+        gameObject.GetComponent<SpriteRenderer>().enabled=false;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        IsInvincible = false;
+        gameObject.tag = "Player";
+        gameObject.layer = 9;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -68,7 +101,6 @@ public class PlayerController : MonoBehaviour {
                     item.SetActive(true);
                 }
                 Destroy(collision.gameObject);
-                Debug.Log(level);
                 return;
 
             }
@@ -86,34 +118,38 @@ public class PlayerController : MonoBehaviour {
 
         if (collision.tag == "Enemy")
         {
-            Debug.Log("Met an enemy");
-            if (level == 3)
+            if (IsInvincible == false)
             {
-                level--;
-                foreach (GameObject item in Level1Barrels)
+                StartCoroutine(Invincibility());
+                Debug.Log("Met an enemy");
+                if (level == 3) //Laskeminen levelistä 3 leveliin 2.
                 {
-                    item.SetActive(false);
+                    level--;
+                    foreach (GameObject item in Level1Barrels)
+                    {
+                        item.SetActive(false);
+                    }
+                    return;
                 }
-                return;
-            }
 
-            if (level == 2)
-            {
-                level--;
-                foreach (GameObject item in Level2Barrels)
+                if (level == 2) //Laskeminen levelistä 2 leveliin 1.
                 {
-                    item.SetActive(false);
+                    level--;
+                    foreach (GameObject item in Level2Barrels)
+                    {
+                        item.SetActive(false);
+                    }
+                    return;
                 }
-                return;
-            }
 
 
-            if (level == 1)
-            {
-                ExplosionSprite.transform.position = gameObject.transform.position;
-                Destroy(gameObject);
-                ExplosionSprite.GetComponent<Animator>().Play("Explosion");
-                
+                if (level == 1)
+                {
+                    ExplosionSprite.transform.position = gameObject.transform.position;
+                    Destroy(gameObject);
+                    ExplosionSprite.GetComponent<Animator>().Play("Explosion");
+
+                }
             }
         }
     }
