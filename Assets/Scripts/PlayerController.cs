@@ -16,12 +16,14 @@ public class PlayerController : MonoBehaviour {
     public float InvincibilityTime;
     public float InvincibilitySpeed;
     private bool IsInvincible;
+    bool combatMode = false;
+    
+    
 
 
-   
 
-	// Use this for initialization
-	void Start () {
+    
+    void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         //Fire.SetActive(false);
         level = 2;
@@ -61,26 +63,49 @@ public class PlayerController : MonoBehaviour {
         gameObject.layer = 9;
     }
 	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetButton("Vertical"))
+	
+	void Update ()
+    {
+        if (combatMode == false)
         {
-           
+            if (Input.GetButton("Vertical"))
             {
-                rb2d.AddForce(transform.up * thrust);
-                //Fire.SetActive(true);
+
+                {
+                    rb2d.AddForce(transform.up * thrust);
+                    //Fire.SetActive(true);
+                }
+            }
+
+            if (Input.GetButton("Horizontal"))
+            {
+                rb2d.rotation = rb2d.rotation + rotationspeed * Input.GetAxis("Horizontal") * -1;
+            }
+
+            if (Input.GetButtonUp("Vertical"))
+            {
+                //Fire.SetActive(false);
+            }
+            
+
+        }
+        if (combatMode == true)
+        {
+            if (Input.GetButton("Vertical"))
+            {
+
+                {
+                    rb2d.AddForce(transform.up * thrust);
+                    
+                }
             }
         }
-
-        if (Input.GetButton("Horizontal")){
-            rb2d.rotation = rb2d.rotation + rotationspeed * Input.GetAxis("Horizontal") * -1;
-        }
-
-        if (Input.GetButtonUp("Vertical"))
+        if (Input.GetButtonDown("Fire2"))
         {
-            //Fire.SetActive(false);
+            combatMode = !combatMode;
+
         }
-	}
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
