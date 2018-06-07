@@ -93,7 +93,22 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButton("Vertical"))
+        if (combatMode == false)
+        {
+
+            if (Input.GetButton("Vertical")) //Jos painaa ylös, menee ylös. Magic!
+            {
+                if (Input.GetButton("Vertical"))
+                {
+
+                    {
+                        rb2d.AddForce(transform.up * thrust);
+                        //Fire.SetActive(true);
+                    }
+                }
+            }
+
+            if (Input.GetButton("Horizontal"))
             {
                 rb2d.AddForce(transform.up * thrust);
                 //Fire.SetActive(true);
@@ -109,6 +124,7 @@ public class PlayerController : MonoBehaviour
             {
                 //Fire.SetActive(false);
             }
+        }
 
 
         
@@ -124,17 +140,27 @@ public class PlayerController : MonoBehaviour
             }
             if (Input.GetButtonDown("Fire2"))
             {
-                combatMode = !combatMode;
+                rb2d.AddForce(new Vector2(0, 1) * thrust * Input.GetAxis("Vertical"));
             }
-            if (Input.GetButtonUp("Vertical")) //Vanha toiminto, jossa raketille ilmestyi tulta kun liikkui.
+
+            if (Input.GetButton("Horizontal"))
             {
-                //Fire.SetActive(false);
+                rb2d.AddForce(new Vector2(1, 0) * thrust * Input.GetAxis("Horizontal"));
             }
+
+
+        }
+        if (Input.GetKeyDown("z"))
+        {
+            combatMode = !combatMode;
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
         if (collision.tag == "PowerUp") //Powerupin saanti.
         {
             Debug.Log("Got a powerup!");
