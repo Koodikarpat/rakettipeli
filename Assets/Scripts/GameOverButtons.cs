@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameOverButtons : MonoBehaviour {
+
+	// Use this for initialization
+	void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void QuitGame()
+    {
+        Application.Quit();
+    }
+}

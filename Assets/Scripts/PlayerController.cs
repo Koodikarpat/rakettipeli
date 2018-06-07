@@ -40,6 +40,11 @@ public class PlayerController : MonoBehaviour
         //Canvas.gameObject.GetComponent<Animator>().enabled = false;
         Canvas.gameObject.GetComponent<Animator>().playbackTime = 0;
         Canvas.gameObject.GetComponent<Animator>().SetTrigger("GameOver");
+        Canvas.gameObject.GetComponent<Animator>().speed=0;
+        SetBarrels();
+        //Canvas.gameObject.GetComponent<Animator>().enabled = false;
+        Canvas.gameObject.GetComponent<Animator>().playbackTime = 0;
+        Canvas.gameObject.GetComponent<Animator>().SetTrigger("GameOver");
         Canvas.gameObject.GetComponent<Animator>().speed = 0;
         SetBarrels();
         foreach (GameObject item in Level2Barrels)
