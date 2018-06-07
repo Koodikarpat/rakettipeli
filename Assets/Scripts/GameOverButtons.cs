@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameOverButtons : MonoBehaviour {
 
 	// Use this for initialization
-	void RestartGame()
+	public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
