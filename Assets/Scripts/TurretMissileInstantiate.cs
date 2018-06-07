@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurretMissileInstantiate : MonoBehaviour {
 
-    public Rigidbody missilePrefab;
+    public Rigidbody2D missilePrefab;
     public Transform barrelEnd;
     private Vector2 suunta;
     private float aika = 0;
