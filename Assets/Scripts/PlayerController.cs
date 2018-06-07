@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     public float InvincibilitySpeed; //Nopeus, jolla raketti "vilkkuu" oltaessaan näkymättömässä tilanteessa.
     private bool IsInvincible; //Jos pelaaja on näkymätön, viholliset eivät voi tehdä vahinkoa.
     public Canvas Canvas;
+    bool combatMode = false;
 
 
    
@@ -60,16 +61,21 @@ public class PlayerController : MonoBehaviour {
         gameObject.tag = "Player";
         gameObject.layer = 9;
     }
-	
-	void Update () {
-        if (Input.GetButton("Vertical")) //Jos painaa ylös, menee ylös. Magic!
-        {
-            if (Input.GetButton("Vertical"))
-            {
 
+    void Update()
+    {
+        if (combatMode == false)
+        {
+
+            if (Input.GetButton("Vertical")) //Jos painaa ylös, menee ylös. Magic!
+            {
+                if (Input.GetButton("Vertical"))
                 {
-                    rb2d.AddForce(transform.up * thrust);
-                    //Fire.SetActive(true);
+
+                    {
+                        rb2d.AddForce(transform.up * thrust);
+                        //Fire.SetActive(true);
+                    }
                 }
             }
 
@@ -82,28 +88,29 @@ public class PlayerController : MonoBehaviour {
             {
                 //Fire.SetActive(false);
             }
-            
-
         }
+
         if (combatMode == true)
         {
             if (Input.GetButton("Vertical"))
             {
+                rb2d.AddForce(new Vector2(0, 1) * thrust * Input.GetAxis("Vertical"));
+            }
 
-        if (Input.GetButton("Horizontal")){ //Hallitsee kääntämistä. RotationSpeed hallitsee kääntymisnopeutta.
-            rb2d.rotation = rb2d.rotation + rotationspeed * Input.GetAxis("Horizontal") * -1;
+            if (Input.GetButton("Horizontal"))
+            {
+                rb2d.AddForce(new Vector2(1, 0) * thrust * Input.GetAxis("Horizontal"));
+            }
+
+
         }
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetKeyDown("z"))
         {
             combatMode = !combatMode;
-
-        if (Input.GetButtonUp("Vertical")) //Vanha toiminto, jossa raketille ilmestyi tulta kun liikkui.
-        {
-            //Fire.SetActive(false);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         
         if (collision.tag == "PowerUp") //Powerupin saanti.
