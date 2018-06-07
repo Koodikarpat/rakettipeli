@@ -109,7 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8646215f79880e24888a19c1c2bf990a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missilePrefab: {fileID: 0}
+  missilePrefab: {fileID: 50464063306342482, guid: 0ec323c1904876f4ba11aff6110d223b,
+    type: 2}
   barrelEnd: {fileID: 4056735691569946}
   fireRate: 2
   range: 20

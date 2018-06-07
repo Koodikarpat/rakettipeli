@@ -109,7 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86dffda64d6858048a1508e0740f210f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammusPrefab: {fileID: 0}
+  ammusPrefab: {fileID: 50996491089426080, guid: 96583ed974edc74439e0292ab88a477a,
+    type: 2}
   barrelEnd: {fileID: 4516496267937934}
   lahtonopeus: 100
   fireRate: 2
