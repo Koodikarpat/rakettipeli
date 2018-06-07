@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
-    public GameObject Rocket;
+    public PlayerController Rocket;
     public float CameraDistance;
 
     
@@ -16,7 +16,10 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 RocketLocation = new Vector3(Rocket.transform.position.x, Rocket.transform.position.y, Rocket.transform.position.z - CameraDistance);
-        gameObject.transform.localPosition = (RocketLocation);
+        if (Rocket.level != 0)
+        {
+            Vector3 RocketLocation = new Vector3(Rocket.transform.position.x, Rocket.transform.position.y, Rocket.transform.position.z - CameraDistance);
+            gameObject.transform.localPosition = (RocketLocation);
+        }
 	}
 }
