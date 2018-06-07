@@ -132,13 +132,6 @@ public class PlayerController : MonoBehaviour
         if (combatMode == true)
         {
             if (Input.GetButton("Vertical"))
-            { }
-
-            if (Input.GetButton("Horizontal")) //Hallitsee kääntämistä. RotationSpeed hallitsee kääntymisnopeutta.
-            { 
-                rb2d.rotation = rb2d.rotation + rotationspeed * Input.GetAxis("Horizontal") * -1;
-            }
-            if (Input.GetButtonDown("Fire2"))
             {
                 rb2d.AddForce(new Vector2(0, 1) * thrust * Input.GetAxis("Vertical"));
             }
@@ -155,8 +148,6 @@ public class PlayerController : MonoBehaviour
             combatMode = !combatMode;
         }
     }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
