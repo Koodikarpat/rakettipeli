@@ -95,30 +95,16 @@ public class PlayerController : MonoBehaviour
     {
         if (combatMode == false)
         {
-
-            if (Input.GetButton("Vertical")) //Jos painaa ylös, menee ylös. Magic!
+            if (Input.GetButton("Vertical"))
             {
-                if (Input.GetButton("Vertical"))
-                {
-
-                    {
-                        rb2d.AddForce(transform.up * thrust);
-                        //Fire.SetActive(true);
-                    }
-                }
-            }
+                    rb2d.AddForce(transform.up * thrust);
+                    //Fire.SetActive(true);
+            } 
 
             if (Input.GetButton("Horizontal"))
             {
-                rb2d.AddForce(transform.up * thrust);
-                //Fire.SetActive(true);
+                rb2d.rotation = rb2d.rotation + rotationspeed * Input.GetAxis("Horizontal") * -1;
             }
-            
-
-        if (Input.GetButton("Horizontal"))
-        {
-            rb2d.rotation = rb2d.rotation + rotationspeed * Input.GetAxis("Horizontal") * -1;
-        }
 
             if (Input.GetButtonUp("Vertical"))
             {
