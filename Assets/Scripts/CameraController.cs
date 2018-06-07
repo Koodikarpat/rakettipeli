@@ -16,10 +16,7 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Rocket.level != 0)
-        {
-            Vector3 RocketLocation = new Vector3(Rocket.transform.position.x, Rocket.transform.position.y, Rocket.transform.position.z - CameraDistance);
-            gameObject.transform.localPosition = (RocketLocation);
-        }
+        Vector3 RocketLocation = new Vector3(Rocket.transform.position.x, Rocket.transform.position.y, Rocket.transform.position.z - CameraDistance);
+        gameObject.transform.localPosition = (RocketLocation);
 	}
 }

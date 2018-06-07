@@ -203,7 +203,7 @@ public class PlayerController : MonoBehaviour
                 if (level == 1) //Game Over!
                 {
                     ExplosionSprite.transform.position = gameObject.transform.position;
-                    Destroy(gameObject);
+                    gameObject.SetActive(false);
                     ExplosionSprite.GetComponent<Animator>().Play("Explosion");
                     Canvas.gameObject.GetComponent<Animator>().speed = 1;
 
