@@ -17,7 +17,6 @@ public class LevelTextStuff : MonoBehaviour {
         levelScript = GetComponent<Levels>();
         aluksenLeveli = levelScript.level;
         SetLevelText();
-
     }
 
 	void Update () {
@@ -34,7 +33,6 @@ public class LevelTextStuff : MonoBehaviour {
         {
             levelDownText.gameObject.SetActive(true);
             levelDownText.text = "Level Down ;C";
-            
         }
 
         viimeLeveli = aluksenLeveli;
