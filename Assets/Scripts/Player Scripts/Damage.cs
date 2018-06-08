@@ -12,11 +12,13 @@ public class Damage : MonoBehaviour {
     private float LoopedTime;
     public float MaxInvincibilityLoopTime; //Montako kertaa näkymättömyysanimaatio looppaa.
     private List<GameObject> ActiveBarrels = new List<GameObject>();
+    private Transform Fire;
 
     private void Awake()
     {
         LevelScript = GetComponent<Levels>();
         GameOverScript = GetComponent<GameOver>();
+        Fire = gameObject.transform.Find("Tuli");
     }
     void Start()
     {
@@ -39,12 +41,14 @@ public class Damage : MonoBehaviour {
         gameObject.layer = 10;
         Debug.Log(gameObject.layer);
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        Fire.GetComponent<SpriteRenderer>().enabled = false;
         foreach (GameObject item in ActiveBarrels)
         {
             item.SetActive(false);
         }
         yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        Fire.GetComponent<SpriteRenderer>().enabled = true;
         foreach (GameObject item in ActiveBarrels)
         {
             item.SetActive(true);
@@ -53,12 +57,14 @@ public class Damage : MonoBehaviour {
         {
             yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            Fire.GetComponent<SpriteRenderer>().enabled = false;
             foreach (GameObject item in ActiveBarrels)
             {
                 item.SetActive(false);
             }
             yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
             gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            Fire.GetComponent<SpriteRenderer>().enabled = true;
             foreach (GameObject item in ActiveBarrels)
             {
                 item.SetActive(true);
@@ -72,7 +78,7 @@ public class Damage : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy") //Jos pelaaja törmää viholliseen, hän ottaa vahinkoa.
+        if (collision.tag == "Enemy" || collision.tag== "EnemyBullet") //Jos pelaaja törmää viholliseen, hän ottaa vahinkoa.
         {
             if (IsInvincible == false)
             {

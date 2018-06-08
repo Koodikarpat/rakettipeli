@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4291117462689846}
   - component: {fileID: 212180377032551478}
   - component: {fileID: 114883913630504906}
+  - component: {fileID: 58953355963918664}
+  - component: {fileID: 58269518852005806}
   m_Layer: 0
   m_Name: sirkkeli
   m_TagString: Untagged
@@ -41,6 +43,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -67.27901}
+--- !u!58 &58269518852005806
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317509323914854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4
+--- !u!58 &58953355963918664
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317509323914854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4
 --- !u!114 &114883913630504906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +84,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1a463bb889918499a457d757883237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nopeus: 100
+  "ykk\xF6svektori": {x: 0, y: 0, z: 0}
   nopee: 5
+  matka: 1
 --- !u!212 &212180377032551478
 SpriteRenderer:
   m_ObjectHideFlags: 1

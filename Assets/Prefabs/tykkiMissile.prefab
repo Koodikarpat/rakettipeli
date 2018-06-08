@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114455754978282056}
   - component: {fileID: 114882167753951380}
   - component: {fileID: 58018146056182706}
+  - component: {fileID: 114329874446271922}
   m_Layer: 11
   m_Name: tykkiMissile
   m_TagString: Enemy
@@ -87,6 +88,20 @@ CircleCollider2D:
   m_Offset: {x: 0.1, y: 0.3}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!114 &114329874446271922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171504400141682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 3
+  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
+    type: 2}
 --- !u!114 &114455754978282056
 MonoBehaviour:
   m_ObjectHideFlags: 1

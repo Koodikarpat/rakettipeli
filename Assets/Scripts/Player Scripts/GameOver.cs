@@ -11,11 +11,13 @@ public class GameOver : MonoBehaviour {
 	void Start () {
         GameOverCanvas.gameObject.GetComponent<Animator>().playbackTime = 0;
         GameOverCanvas.gameObject.GetComponent<Animator>().speed = 0;
+        GameOverCanvas.gameObject.SetActive(false);
     }
 	
 	// Update is called once per frame
 	public void GameOverAnimation()
     {
+        GameOverCanvas.gameObject.SetActive(true);
         ExplosionSprite.transform.position = gameObject.transform.position;
         gameObject.SetActive(false);
         ExplosionSprite.GetComponent<Animator>().Play("Explosion");

@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 212571402755958550}
   - component: {fileID: 114383226640764122}
   - component: {fileID: 50996491089426080}
-  - component: {fileID: 61377861077078918}
+  - component: {fileID: 61581580657751220}
   m_Layer: 11
   m_Name: Vihollisen ammus
-  m_TagString: Enemy
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61377861077078918
+--- !u!61 &61581580657751220
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -72,7 +72,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -5,20 +5,11 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour {
 
     public float HealthPoints;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject ExplosionParticle;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Bullet")
+        if (collision.tag == "Bullet" || collision.tag == "EnemyBullet")
         {
             HealthPoints--;
             Destroy(collision.gameObject);
@@ -32,8 +23,8 @@ public class EnemyHealth : MonoBehaviour {
 
         if (HealthPoints <= 0)
         {
+            Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
-            Debug.Log("ded");
         }
     }
 }

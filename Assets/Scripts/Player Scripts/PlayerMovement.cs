@@ -53,6 +53,15 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKeyDown("z"))
         {
             combatMode = !combatMode;
+            if (combatMode == true)
+            {
+                gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
+            }
+
+            if (combatMode == false)
+            {
+                gameObject.GetComponent<Rigidbody2D>().freezeRotation = false;
+            }
         }
     }
 }

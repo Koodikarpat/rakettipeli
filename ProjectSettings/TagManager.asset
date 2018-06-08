@@ -8,6 +8,7 @@ TagManager:
   - LevelRestriction
   - PowerUp
   - Enemy
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
