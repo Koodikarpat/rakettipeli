@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1c0dcdd41b4994a990532cbf2e6d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidSpeed: 500
+  asteroidSpeed: 100
 --- !u!212 &212328433454726298
 SpriteRenderer:
   m_ObjectHideFlags: 1
