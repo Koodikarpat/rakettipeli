@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    bool combatMode = false;
+    public bool combatMode = false;
     private Rigidbody2D rb2d;
     public float thrust;
     public float rotationspeed;

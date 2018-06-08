@@ -5,19 +5,19 @@ using UnityEngine;
 public class RakettiTuli : MonoBehaviour {
 
     float speed;
-    float pituus;
     public float pittusKerroin = 0.05f;
     public GameObject tuli;
-    bool combatMode = false;
-
+    float pituus;
+    PlayerMovement pmScript; //PlayerMovement scripti
+    
 	// Use this for initialization
 	void Start () {
-		
+        pmScript = GetComponent<PlayerMovement>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (combatMode == false)
+        if (pmScript.combatMode == false)
         {
             speed = GetComponent<Rigidbody2D>().velocity.magnitude;
             
@@ -26,9 +26,9 @@ public class RakettiTuli : MonoBehaviour {
 
             tuli.transform.localScale = new Vector3(pituus, pituus, 1);
         }
-        if (Input.GetKey(KeyCode.Z)) 
+        else
         {
-            combatMode = !combatMode;
+            tuli.transform.localScale = new Vector3(0, 0, 0);
         }
     }
 }
