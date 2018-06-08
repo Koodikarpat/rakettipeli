@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
-    public PlayerController Rocket;
+    public GameObject Rocket;
     public float CameraDistance;
 
 
