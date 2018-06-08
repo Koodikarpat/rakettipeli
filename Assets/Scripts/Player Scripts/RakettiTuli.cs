@@ -9,6 +9,7 @@ public class RakettiTuli : MonoBehaviour {
     public GameObject tuli;
     float pituus;
     PlayerMovement pmScript; //PlayerMovement scripti
+    float satunnaisuus;
     
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class RakettiTuli : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        satunnaisuus = Random.Range(0.9f, 1);
         if (pmScript.combatMode == false)
         {
             speed = GetComponent<Rigidbody2D>().velocity.magnitude;
@@ -24,7 +26,7 @@ public class RakettiTuli : MonoBehaviour {
 
             pituus = speed * pittusKerroin;
 
-            tuli.transform.localScale = new Vector3(pituus, pituus, 1);
+            tuli.transform.localScale = new Vector3(pituus*satunnaisuus, pituus*satunnaisuus, 1);
         }
         else
         {

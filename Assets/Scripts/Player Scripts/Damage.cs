@@ -18,7 +18,7 @@ public class Damage : MonoBehaviour {
     {
         LevelScript = GetComponent<Levels>();
         GameOverScript = GetComponent<GameOver>();
-        Fire = gameObject.transform.Find("Tuli");
+        Fire = gameObject.transform.Find("iso liekki");
     }
     void Start()
     {
