@@ -48,7 +48,6 @@ public class Levels : MonoBehaviour
                 }
                 Destroy(collision.gameObject);
             }
-            Debug.Log(level);
         }
     }
 }
