@@ -60,9 +60,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-'
+  m_Text: Level Up!
 --- !u!222 &222721496032320886
 CanvasRenderer:
   m_ObjectHideFlags: 1
