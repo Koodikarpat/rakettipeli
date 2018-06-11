@@ -5,14 +5,14 @@ using UnityEngine;
 public class Speedometer : MonoBehaviour {
 
     float speed;
-    public GameObject raketti;
+    private GameObject raketti;
     float kulma;
     public float nopeusKerroin = 8;
 
 
 	// Use this for initialization
 	void Start () {
-		
+        raketti = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
