@@ -96,7 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ed1f0070c277b4ab924381392e7a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raketti: {fileID: 0}
   nopeusKerroin: 8
 --- !u!114 &114810249144213268
 MonoBehaviour:
