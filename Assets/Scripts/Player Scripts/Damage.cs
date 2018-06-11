@@ -15,6 +15,11 @@ public class Damage : MonoBehaviour {
     private Component[] RocketChildren;
     private int playerHealth;
 
+    void GetRocketChildren()
+    {
+        RocketChildren = GetComponentsInChildren<SpriteRenderer>();
+    }
+
     private void Awake()
     {
         healthScript = GetComponent<PlayerHealth>();
@@ -23,24 +28,23 @@ public class Damage : MonoBehaviour {
     }
     void Start()
     {
-        RocketChildren = GetComponentsInChildren<SpriteRenderer>();
+        GetRocketChildren();
     }
 
     public IEnumerator Invincibility() //Näkymättömyys, joka aktivoituu, kun pelaaja ottaa vahinkoa. Jos on näkymätön, pelaaja ei voi ottaa vahinkoa ja hän menee vihollisten läpi.
     {
+        GetRocketChildren();
         LoopedTime = 0;
         IsInvincible = true;
         gameObject.tag = "Untagged";
         gameObject.layer = 10;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
         foreach (SpriteRenderer item in RocketChildren)
         {
             item.enabled=false;
         }
         yield return new WaitForSeconds(InvincibilityTime / InvincibilitySpeed);
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
-        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
         //Fire.GetComponent<SpriteRenderer>().enabled = true;
         foreach (SpriteRenderer item in RocketChildren)
         {
