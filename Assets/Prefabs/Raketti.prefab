@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 114989518339874362}
   - component: {fileID: 114992313467778846}
   - component: {fileID: 114593747835324678}
+  - component: {fileID: 114931847162824772}
   - component: {fileID: 60842637285613322}
   m_Layer: 9
   m_Name: Raketti
@@ -601,6 +602,18 @@ MonoBehaviour:
     type: 2}
   levelDownText: {fileID: 114719918278279610, guid: 292715e5a5b32744aae9d7621fd65864,
     type: 2}
+--- !u!114 &114931847162824772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1970254931365704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce61dbcde183ec43920a66c8ea61ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 0
 --- !u!114 &114957857503378442
 MonoBehaviour:
   m_ObjectHideFlags: 1
