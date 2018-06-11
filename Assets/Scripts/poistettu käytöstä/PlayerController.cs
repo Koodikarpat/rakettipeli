@@ -4,9 +4,9 @@ using UnityEngine;
 using System.Linq;
 
 
-//Pistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! 
+//Poistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! JA ÄLÄ KOSKE, KOSKA TÄÄ TUHOO KAIKEN!!!!!!!!!!! 
 
-public class PlayerController : MonoBehaviour
+/*public class PlayerController : MonoBehaviour
 {
 
     bool Move;
@@ -268,4 +268,4 @@ public class PlayerController : MonoBehaviour
         }
         Debug.Log("Set active barrels");
     }
-}
+}*/
