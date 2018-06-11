@@ -4,9 +4,9 @@ using UnityEngine;
 using System.Linq;
 
 
-/*Poistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! 
+//Poistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! JA ÄLÄ KOSKE, KOSKA TÄÄ TUHOO KAIKEN!!!!!!!!!!! 
 
-public class PlayerController : MonoBehaviour
+/*public class PlayerController : MonoBehaviour
 {
 
     bool Move;
@@ -102,9 +102,10 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButton("Horizontal"))
             {
                 rb2d.rotation = rb2d.rotation + rotationspeed * Input.GetAxis("Horizontal") * -1;
+                //Hallitsee kääntämistä. RotationSpeed hallitsee kääntymisnopeutta.
             }
 
-            if (Input.GetButtonUp("Vertical"))
+            if (Input.GetButtonUp("Vertical"))//Vanha toiminto, jossa raketille ilmestyi tulta kun liikkui.
             {
                 //Fire.SetActive(false);
             }
@@ -115,36 +116,30 @@ public class PlayerController : MonoBehaviour
 
         if (combatMode == true)
         {
+
             if (Input.GetButton("Vertical"))
             {
                 rb2d.AddForce(new Vector2(0, 1) * thrust * Input.GetAxis("Vertical"));
+
             }
 
             if (Input.GetButton("Horizontal"))
             {
-                rb2d.AddForce(new Vector2(1, 0) * thrust * Input.GetAxis("Horizontal"));
+
+                {
+                    rb2d.AddForce(new Vector2(1, 0) * thrust * Input.GetAxis("Horizontal"));
+
+                }
             }
-
-
         }
         if (Input.GetKeyDown("z"))
         {
             combatMode = !combatMode;
+
         }
     }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-        if (collision.tag == "PowerUp") //Powerupin saanti.
-        {
-            Debug.Log("Got a powerup!");
-            if (level == 1) //Level 2.
-            {
-                level++;
-                foreach (GameObject item in Level1Barrels)
+                void OnTriggerEnter2D(Collider2D collision)
                 {
-                    item.SetActive(false);
 
                 }
                 foreach (GameObject item in Level2Barrels)
@@ -154,7 +149,13 @@ public class PlayerController : MonoBehaviour
                 Destroy(collision.gameObject);
                 return;
 
-            }
+                            }
+                            foreach (GameObject item in Level2Barrels)
+                            {
+                                item.SetActive(true);
+                            }
+                            Destroy(collision.gameObject);
+                            return;
 
             if (level == 2) // Level 3. Käytetään yhtä aikaa ensimmäisen ja toisen tason barreleita.
             {
@@ -186,10 +187,7 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
 
-                if (level == 2) //Laskeminen levelistä 2 leveliin 1.
-                {
-                    level--;
-                    foreach (GameObject item in Level2Barrels)
+                    if (collision.tag == "Enemy")
                     {
                         item.SetActive(false);
                     }
@@ -202,6 +200,19 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
 
+                            if (level == 2) //Laskeminen levelistä 2 leveliin 1.
+                            {
+                                level--;
+                                foreach (GameObject item in Level2Barrels)
+                                {
+                                    item.SetActive(false);
+                                }
+                                foreach (GameObject item in Level1Barrels)
+                                {
+                                    item.SetActive(true);
+                                }
+                                return;
+                            }
 
                 if (level == 1) //Game Over!
                 {
@@ -257,5 +268,4 @@ public class PlayerController : MonoBehaviour
         }
         Debug.Log("Set active barrels");
     }
-}
-*/
+}*/

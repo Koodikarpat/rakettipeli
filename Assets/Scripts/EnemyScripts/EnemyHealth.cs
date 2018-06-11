@@ -36,8 +36,6 @@ public class EnemyHealth : MonoBehaviour {
             HealthPoints--;
             Destroy(collision.gameObject);
             StartCoroutine(DamageFlash());
-
-            
         }
 
         if (collision.tag == "Player")

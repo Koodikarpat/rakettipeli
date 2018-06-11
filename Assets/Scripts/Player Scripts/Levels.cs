@@ -21,7 +21,6 @@ public class Levels : MonoBehaviour
     {
         if (collision.tag == "PowerUp") //Powerupin saadessaan pelaajan leveli nousee, jolloin pelaaja saa lisää tykkejä käyttöönsä. 1 level = 1 tykki lisää.
         {
-            Debug.Log("Got a powerup!");
             if (level == 1) //Level 2.
             {
                 level++;

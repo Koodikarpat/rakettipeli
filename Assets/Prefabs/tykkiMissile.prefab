@@ -9,123 +9,130 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1239526649131746}
+  m_RootGameObject: {fileID: 1171504400141682}
   m_IsPrefabParent: 1
---- !u!1 &1239526649131746
+--- !u!1 &1171504400141682
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4006385676450000}
-  - component: {fileID: 212786376687265364}
-  - component: {fileID: 50458840649681318}
-  - component: {fileID: 114156762978357850}
-  - component: {fileID: 114936960842634208}
-  - component: {fileID: 58546866171323206}
-  - component: {fileID: 114633273902630066}
+  - component: {fileID: 4132338744427210}
+  - component: {fileID: 212778782790595246}
+  - component: {fileID: 58018146056182706}
+  - component: {fileID: 114455754978282056}
+  - component: {fileID: 114882167753951380}
+  - component: {fileID: 114925186514957692}
   m_Layer: 11
-  m_Name: asteroidi small
+  m_Name: tykkiMissile
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4006385676450000
+--- !u!1 &1705186300238180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4056735691569946}
+  m_Layer: 11
+  m_Name: BarrelEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4056735691569946
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239526649131746}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -16.1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_GameObject: {fileID: 1705186300238180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08, y: 5.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4132338744427210}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50458840649681318
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!4 &4132338744427210
+Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239526649131746}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: afc8fcea8e0a4a34c8f58393965d1921, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &58546866171323206
+  m_GameObject: {fileID: 1171504400141682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.018822, y: 1.1619966, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4056735691569946}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58018146056182706
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239526649131746}
+  m_GameObject: {fileID: 1171504400141682}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.5, y: 0.4}
+  m_Offset: {x: 0.1, y: 0.3}
   serializedVersion: 2
-  m_Radius: 2.4
---- !u!114 &114156762978357850
+  m_Radius: 2.5
+--- !u!114 &114455754978282056
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239526649131746}
+  m_GameObject: {fileID: 1171504400141682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c1c0dcdd41b4994a990532cbf2e6d57, type: 3}
+  m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidSpeed: 100
---- !u!114 &114633273902630066
+--- !u!114 &114882167753951380
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239526649131746}
+  m_GameObject: {fileID: 1171504400141682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
+  m_Script: {fileID: 11500000, guid: 8646215f79880e24888a19c1c2bf990a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114936960842634208
+  missilePrefab: {fileID: 50464063306342482, guid: 0ec323c1904876f4ba11aff6110d223b,
+    type: 2}
+  barrelEnd: {fileID: 4056735691569946}
+  fireRate: 2
+  range: 20
+--- !u!114 &114925186514957692
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239526649131746}
+  m_GameObject: {fileID: 1171504400141682}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPoints: 1
-  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
-    type: 2}
-  onkoKuollut: 0
-  MaxLoopTime: 0
-  InvincibilityTime: 0
---- !u!212 &212786376687265364
+--- !u!212 &212778782790595246
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239526649131746}
+  m_GameObject: {fileID: 1171504400141682}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -155,12 +162,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b807c236258d8bf4f8743a2587ca7952, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f6be2ce0b4e49543965df59a548596c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.99, y: 1.39}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
