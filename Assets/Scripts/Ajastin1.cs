@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Ajastin1 : MonoBehaviour {
 
-    bool m_supposedToCheckTime = false;
     float m_time = 0.0f;
+    public float odotusAika;
 
     private void Start()
     {
@@ -16,16 +16,14 @@ public class Ajastin1 : MonoBehaviour {
     {
         if (gameObject.activeSelf)
         {
-                m_time += 0.01f;
+                m_time += Time.deltaTime;
 
-                if (m_time >= 2.0f)
+                if (m_time >= odotusAika)
                 {
                     m_time = 0.0f;
-                    m_supposedToCheckTime = false;
 
                     gameObject.SetActive(false);
                 }
-            
         }
     }
 }
