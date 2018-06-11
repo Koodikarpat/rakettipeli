@@ -621,8 +621,8 @@ MonoBehaviour:
   ExplosionSprite: {fileID: 1157636060449822, guid: 60c03e2f46a0d894a93c8e46a0698ade,
     type: 2}
   CanvasesToDestroyWhenGameOver:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 223035815271858982, guid: 436fe5fb527ef3a4aa1bb782f0a1801b, type: 2}
+  - {fileID: 223251946063017754, guid: 1fdac61985aa1114e9a4e80cb9cd7238, type: 2}
 --- !u!212 &212359547516032740
 SpriteRenderer:
   m_ObjectHideFlags: 1
