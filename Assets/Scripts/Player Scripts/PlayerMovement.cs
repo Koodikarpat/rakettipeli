@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     void Update () {
         if (combatMode == false)
         {
-            if (Input.GetButton("Vertical"))
+            if (Input.GetKey("up"))
             {
                 rb2d.AddForce(transform.up * thrust);
                 //Fire.SetActive(true);
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
-        if (combatMode == true)
+        if (combatMode == true) //CombatModessa pelaaja katsoo koko ajan yhteen suuntaan.
         {
             if (Input.GetButton("Vertical"))
             {

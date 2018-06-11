@@ -11,9 +11,14 @@ public class EnemyHealth : MonoBehaviour {
     private int LoopedTime;
     public float InvincibilityTime;
 
+    private void Start()
+    {
+        LoopedTime = 0;
+    }
+
     IEnumerator  DamageFlash()
     {
-        while (LoopedTime < MaxLoopTime)
+        while (LoopedTime < MaxLoopTime) //Jos vihollinen ottaa damagea, hän vilkkuu lyhyen ajan.
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
             yield return new WaitForSeconds(InvincibilityTime);
@@ -21,6 +26,7 @@ public class EnemyHealth : MonoBehaviour {
             yield return new WaitForSeconds(InvincibilityTime);
             LoopedTime++;
         }
+        LoopedTime = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,7 +35,7 @@ public class EnemyHealth : MonoBehaviour {
         {
             HealthPoints--;
             Destroy(collision.gameObject);
-            DamageFlash();
+            StartCoroutine(DamageFlash());
 
             
         }
@@ -37,7 +43,7 @@ public class EnemyHealth : MonoBehaviour {
         if (collision.tag == "Player")
         {
             HealthPoints--;
-            DamageFlash();
+            StartCoroutine(DamageFlash());
         }
 
         if (HealthPoints <= 0)

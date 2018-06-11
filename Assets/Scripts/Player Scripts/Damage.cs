@@ -108,7 +108,6 @@ public class Damage : MonoBehaviour {
                 {
                     GameOverScript.GameOverAnimation();
                 }
-                StartCoroutine(Invincibility());
 
             }
         }
