@@ -8,6 +8,7 @@ public class EnemyRotator : MonoBehaviour {
     private Transform Position;
     Vector2 suunta;
     float kulma;
+    public float nopeus = 1;
 
     private void Start()
     {
@@ -15,7 +16,10 @@ public class EnemyRotator : MonoBehaviour {
     }
     void Update()
     {
+        
         targetPosition = GameObject.FindWithTag("Player");
+
+        
         Position = targetPosition.transform;
 
         suunta = targetPosition.transform.position - transform.position;
@@ -23,7 +27,8 @@ public class EnemyRotator : MonoBehaviour {
         kulma = Mathf.Atan2(suunta.y, suunta.x) * Mathf.Rad2Deg - 90;
 
         
-        transform.rotation = Quaternion.Euler(0, 0, kulma );
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, kulma) , nopeus);
+       
 
     }
 
