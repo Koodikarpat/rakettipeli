@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 114869205493902920}
   - component: {fileID: 114973746951458986}
   m_Layer: 5
-  m_Name: PlayerHealthUI
+  m_Name: PlayerHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthToDisplayAt: 5
-  Player: {fileID: 0}
 --- !u!114 &114232014528484234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,7 +187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthToDisplayAt: 2
-  Player: {fileID: 0}
 --- !u!114 &114381387969894680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -282,7 +280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthToDisplayAt: 4
-  Player: {fileID: 0}
 --- !u!114 &114665961005329308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -295,7 +292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthToDisplayAt: 3
-  Player: {fileID: 0}
 --- !u!114 &114790463484530676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -362,7 +358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthToDisplayAt: 1
-  Player: {fileID: 0}
 --- !u!114 &114869205493902920
 MonoBehaviour:
   m_ObjectHideFlags: 1

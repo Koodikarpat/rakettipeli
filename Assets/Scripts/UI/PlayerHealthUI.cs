@@ -6,7 +6,12 @@ using UnityEngine.UI;
 public class PlayerHealthUI : MonoBehaviour {
 
     public int HealthToDisplayAt;
-    public GameObject Player;
+    GameObject Player;
+
+    private void Start()
+    {
+        Player = GameObject.FindWithTag("Player");
+    }
 
     void CheckPlayerHealth()
     {

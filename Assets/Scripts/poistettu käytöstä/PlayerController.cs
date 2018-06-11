@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 
-//Pistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! 
+/*Poistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! 
 
 public class PlayerController : MonoBehaviour
 {
@@ -258,3 +258,4 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Set active barrels");
     }
 }
+*/

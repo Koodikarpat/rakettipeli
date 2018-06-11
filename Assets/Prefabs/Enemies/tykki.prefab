@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114147606049555704}
   - component: {fileID: 114000790094583140}
   - component: {fileID: 60585862996861128}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: tykki
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4407072597980114}
   - component: {fileID: 212688890913494546}
   - component: {fileID: 114794290260731892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tykki 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4516496267937934}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: BarrelEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1706579922082450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08000183, y: 6.1800003, z: 0}
+  m_LocalPosition: {x: 0.04, y: 3.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4407072597980114}
@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124826419998824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.75, y: 11.899245, z: 0}
+  m_LocalPosition: {x: -50.633896, y: 14.139573, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4407072597980114}
