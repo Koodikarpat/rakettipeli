@@ -36,7 +36,6 @@ public class Damage : MonoBehaviour {
         GetRocketChildren();
         LoopedTime = 0;
         IsInvincible = true;
-        gameObject.tag = "Untagged";
         gameObject.layer = 10;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         foreach (SpriteRenderer item in RocketChildren)
@@ -70,7 +69,6 @@ public class Damage : MonoBehaviour {
             LoopedTime++;
         }
         IsInvincible = false;
-        gameObject.tag = "Player";
         gameObject.layer = 9;
     }
 
