@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LevelTextStuff : MonoBehaviour {
+public class PlayerHudStuff : MonoBehaviour {
 
     Levels levelScript;
     int aluksenLeveli;
@@ -12,6 +12,7 @@ public class LevelTextStuff : MonoBehaviour {
     public Text levelText;
     public Text levelUpText;
     public Text levelDownText;
+    public Text healthText;
 
     void Start () {
         levelScript = GetComponent<Levels>();
@@ -41,5 +42,7 @@ public class LevelTextStuff : MonoBehaviour {
     void SetLevelText()
     {
         levelText.text = "Level: " + aluksenLeveli.ToString();
+        healthText.text = 
     }
+
 }

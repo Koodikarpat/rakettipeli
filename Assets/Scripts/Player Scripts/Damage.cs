@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour {
 
-    private Levels LevelScript;
+    private PlayerHealth healthScript;
     private GameOver GameOverScript;
     private bool IsInvincible;
     public float InvincibilityTime; //Kuinka pitkä näkymättömyysanimaatio.
@@ -16,7 +16,7 @@ public class Damage : MonoBehaviour {
 
     private void Awake()
     {
-        LevelScript = GetComponent<Levels>();
+        healthScript = GetComponent<PlayerHealth>();
         GameOverScript = GetComponent<GameOver>();
         Fire = gameObject.transform.Find("iso liekki");
     }
@@ -75,40 +75,39 @@ public class Damage : MonoBehaviour {
         {
             if (IsInvincible == false)
             {
-                Debug.Log("Met an enemy");
+                //Debug.Log("Met an enemy");
 
-                if (LevelScript.level == 3) //Laskeminen levelistä 3 leveliin 2.
+                if (healthScript.playerHealth == 3) //Laskeminen levelistä 3 leveliin 2.
                 {
-                    LevelScript.level--;
-                    foreach (GameObject item in LevelScript.Level1Barrels)
+                    healthScript.playerHealth--;
+                    /*foreach (GameObject item in LevelScript.Level1Barrels)
                     {
                         item.SetActive(false);
-                    }
+                    }*/
                     StartCoroutine(Invincibility()); //Funktio, joka aloittaa näkymättömyysanimaation.
                     return;
                 }
 
-                if (LevelScript.level == 2) //Laskeminen levelistä 2 leveliin 1.
+                if (healthScript.playerHealth == 2) //Laskeminen levelistä 2 leveliin 1.
                 {
-                    LevelScript.level--;
-                    foreach (GameObject item in LevelScript.Level2Barrels)
+                    healthScript.playerHealth--;
+                    /*foreach (GameObject item in LevelScript.Level2Barrels)
                     {
                         item.SetActive(false);
                     }
                     foreach (GameObject item in LevelScript.Level1Barrels)
                     {
                         item.SetActive(true);
-                    }
+                    }*/
                     StartCoroutine(Invincibility());
                     return;
                 }
 
 
-                if (LevelScript.level == 1) //Jos pelaaja ottaa vahinkoa ollessaan levelillä 1, hän kuolee, ja pyöritetään animaatiota Game Over-scriptistä.
+                if (healthScript.playerHealth == 1) //Jos pelaaja ottaa vahinkoa ollessaan levelillä 1, hän kuolee, ja pyöritetään animaatiota Game Over-scriptistä.
                 {
                     GameOverScript.GameOverAnimation();
                 }
-                StartCoroutine(Invincibility());
 
             }
         }
