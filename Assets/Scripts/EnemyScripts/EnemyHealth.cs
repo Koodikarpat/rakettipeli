@@ -33,21 +33,32 @@ public class EnemyHealth : MonoBehaviour {
     {
         if (collision.tag == "Bullet" || collision.tag == "EnemyBullet")
         {
-            HealthPoints--;
             Destroy(collision.gameObject);
+            HealthPoints--;
+            if (HealthPoints <= 0)
+            {
+                Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
+                onkoKuollut = true;
+            }
             StartCoroutine(DamageFlash());
-        }
 
-        if (collision.tag == "Player")
+            }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Player")
         {
             HealthPoints--;
-            StartCoroutine(DamageFlash());
-        }
 
-        if (HealthPoints <= 0)
-        {
-            Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
-            onkoKuollut = true;
-        }
+            
+            if (HealthPoints <= 0)
+            {
+                Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
+                onkoKuollut = true;
+            }
+            StartCoroutine(DamageFlash());
+    }
+
+        
     }
 }

@@ -95,8 +95,8 @@ MonoBehaviour:
   ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
     type: 2}
   onkoKuollut: 0
-  MaxLoopTime: 0
-  InvincibilityTime: 0
+  MaxLoopTime: 3
+  InvincibilityTime: 0.1
 --- !u!114 &114685338902033850
 MonoBehaviour:
   m_ObjectHideFlags: 1

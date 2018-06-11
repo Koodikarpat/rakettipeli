@@ -72,9 +72,9 @@ public class Damage : MonoBehaviour {
         gameObject.layer = 9;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Enemy" || collision.tag== "EnemyBullet") //Jos pelaaja törmää viholliseen, hän ottaa vahinkoa.
+        if (collision.transform.tag == "Enemy" || collision.transform.tag== "EnemyBullet") //Jos pelaaja törmää viholliseen, hän ottaa vahinkoa.
         {
             if (healthScript.playerHealth > 1)
             {

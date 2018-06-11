@@ -13,9 +13,9 @@ public class PlayerHealth : MonoBehaviour {
         playerHealth = 3;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "HealthPickUp")
+        if (collision.transform.tag == "HealthPickUp")
         {
                 playerHealth++;
                 Destroy(collision.gameObject);

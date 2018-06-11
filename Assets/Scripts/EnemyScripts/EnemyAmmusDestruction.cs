@@ -9,9 +9,9 @@ public class EnemyAmmusDestruction : MonoBehaviour {
         Destroy(gameObject, 3f);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollsionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Player" || collision.tag == "LevelRestriction")
+        if (collision.transform.tag == "Player" || collision.transform.tag == "LevelRestriction")
         {
             Debug.Log("Hit the player.");
             Destroy(gameObject);
