@@ -134,6 +134,8 @@ MonoBehaviour:
   ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
     type: 2}
   onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
 --- !u!212 &212786376687265364
 SpriteRenderer:
   m_ObjectHideFlags: 1

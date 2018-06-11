@@ -107,10 +107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthPoints: 1
+  HealthPoints: 3
   ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
     type: 2}
   onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
 --- !u!114 &114707420542016404
 MonoBehaviour:
   m_ObjectHideFlags: 1
