@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+
+//Pistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! 
+
 public class PlayerController : MonoBehaviour
 {
 
