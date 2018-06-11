@@ -19,11 +19,13 @@ public class TurretShooting : MonoBehaviour
 
     void Start()
     {
-        targetPosition = GameObject.FindWithTag("Player");
+
     }
+
 
     void Update()
     {
+        targetPosition = GameObject.FindWithTag("Player");
         Position = targetPosition.transform; 
         aika = aika + Time.deltaTime;
 
