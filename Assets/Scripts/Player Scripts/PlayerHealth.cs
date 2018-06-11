@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour {
 
     public int playerHealth;
+    Damage damageScript;
 
     private void Start()
     {
+        damageScript = GetComponent<Damage>();
         playerHealth = 3;
     }
 

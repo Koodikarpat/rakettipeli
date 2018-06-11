@@ -12,7 +12,6 @@ public class PlayerHudStuff : MonoBehaviour {
     public Text levelText;
     public Text levelUpText;
     public Text levelDownText;
-    public Text healthText;
 
     void Start () {
         levelScript = GetComponent<Levels>();
@@ -42,7 +41,6 @@ public class PlayerHudStuff : MonoBehaviour {
     void SetLevelText()
     {
         levelText.text = "Level: " + aluksenLeveli.ToString();
-        healthText.text = 
     }
 
 }

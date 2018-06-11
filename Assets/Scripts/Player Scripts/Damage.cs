@@ -25,7 +25,7 @@ public class Damage : MonoBehaviour {
         RocketChildren = GetComponentsInChildren<SpriteRenderer>();
     }
 
-    IEnumerator Invincibility() //Näkymättömyys, joka aktivoituu, kun pelaaja ottaa vahinkoa. Jos on näkymätön, pelaaja ei voi ottaa vahinkoa ja hän menee vihollisten läpi.
+    public IEnumerator Invincibility() //Näkymättömyys, joka aktivoituu, kun pelaaja ottaa vahinkoa. Jos on näkymätön, pelaaja ei voi ottaa vahinkoa ja hän menee vihollisten läpi.
     {
         LoopedTime = 0;
         IsInvincible = true;
