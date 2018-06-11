@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour {
 
     public float HealthPoints;
     public GameObject ExplosionParticle;
+    public bool onkoKuollut = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,7 +14,6 @@ public class EnemyHealth : MonoBehaviour {
         {
             HealthPoints--;
             Destroy(collision.gameObject);
-            
         }
 
         if (collision.tag == "Player")
@@ -24,7 +24,7 @@ public class EnemyHealth : MonoBehaviour {
         if (HealthPoints <= 0)
         {
             Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            onkoKuollut = true;
         }
     }
 }

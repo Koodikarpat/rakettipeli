@@ -12,7 +12,6 @@ public class AmmusInstantiate : MonoBehaviour {
     public float ammuksenNopeus;
     public float fireRate;
 
-    private float Level;
     private float nextFire;
 
 
@@ -22,13 +21,6 @@ public class AmmusInstantiate : MonoBehaviour {
     void Update () {
 
         ammuksenSuunta = Rocket.transform.up;
-
-        /*if (Input.GetButtonDown("Fire1"))
-        {
-            Rigidbody2D AmmusInstance;
-            AmmusInstance = Instantiate (AmmusPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody2D;
-            AmmusInstance.AddForce(ammuksenSuunta * ammuksenNopeus);
-        }*/
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
