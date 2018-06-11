@@ -12,14 +12,11 @@ public class EnemyRotator : MonoBehaviour {
 
     private void Start()
     {
-        
+        targetPosition = GameObject.FindWithTag("Player");
     }
+
     void Update()
     {
-        
-        targetPosition = GameObject.FindWithTag("Player");
-
-        
         Position = targetPosition.transform;
 
         suunta = targetPosition.transform.position - transform.position;
