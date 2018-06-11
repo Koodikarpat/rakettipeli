@@ -888,12 +888,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce340ff8ae28694d8ba1c82dc858277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 114327243694908238, guid: 527f27c1740d3c74581f5f229d4bdca9,
-    type: 2}
-  levelUpText: {fileID: 114652381669562382, guid: 6e81386b756aeab44ac7025a987717f6,
-    type: 2}
-  levelDownText: {fileID: 114719918278279610, guid: 292715e5a5b32744aae9d7621fd65864,
-    type: 2}
+  levelText: {fileID: 0}
+  levelUpText: {fileID: 0}
+  levelDownText: {fileID: 0}
 --- !u!114 &114931847162824772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -905,7 +902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce61dbcde183ec43920a66c8ea61ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 0
+  playerHealth: 3
 --- !u!114 &114957857503378442
 MonoBehaviour:
   m_ObjectHideFlags: 1
