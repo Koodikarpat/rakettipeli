@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212102509264578342}
   - component: {fileID: 114666441677177482}
   - component: {fileID: 61399840106571532}
-  - component: {fileID: 61967123746143448}
-  m_Layer: 0
+  - component: {fileID: 61685738362493580}
+  m_Layer: 12
   m_Name: kauppa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
---- !u!61 &61967123746143448
+--- !u!61 &61685738362493580
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
