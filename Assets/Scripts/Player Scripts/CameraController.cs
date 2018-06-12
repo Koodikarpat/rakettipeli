@@ -6,10 +6,12 @@ public class CameraController : MonoBehaviour {
 
     private GameObject Rocket;
     public float CameraDistance;
+    public float CameraSizeAtStart;
 
     private void Start()
     {
         Rocket = GameObject.FindGameObjectWithTag("Player");
+        GetComponent<Camera>().orthographicSize = CameraSizeAtStart;
     }
 
     void Update () {

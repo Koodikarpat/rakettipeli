@@ -20,8 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4885366132539418}
   - component: {fileID: 212102509264578342}
-  - component: {fileID: 58108844921532444}
   - component: {fileID: 114666441677177482}
+  - component: {fileID: 61399840106571532}
+  - component: {fileID: 61967123746143448}
   m_Layer: 0
   m_Name: kauppa
   m_TagString: Untagged
@@ -36,14 +37,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1629526885523338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.2, y: -16.7, z: 0}
   m_LocalScale: {x: 2.5192227, y: 2.55506, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58108844921532444
-CircleCollider2D:
+--- !u!61 &61399840106571532
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -54,9 +55,44 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.1, y: 0.03}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.16, y: 4.06}
+    newSize: {x: 4.16, y: 4.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.15
+  m_Size: {x: 3, y: 3}
+  m_EdgeRadius: 0
+--- !u!61 &61967123746143448
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629526885523338}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1, y: 0.03}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.16, y: 4.06}
+    newSize: {x: 4.16, y: 4.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9, y: 2.9}
+  m_EdgeRadius: 0
 --- !u!114 &114666441677177482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,7 +106,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   varasto: 1
   hinta: 1
-  tuote: {fileID: 0}
+  tuote: {fileID: 1684697519210704, guid: 110a5d0f05a789e469aed5f6805778ac, type: 2}
+  "voimanLis\xE4ys": 20
 --- !u!212 &212102509264578342
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -105,13 +142,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 78d9352bbbaca734fbc3e3d31d05df7c, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: a3c7eda6373e7884797de55faba8f5d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.3, y: 1.07}
+  m_Size: {x: 4.16, y: 4.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

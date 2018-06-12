@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - EnemyBullet
   - PlayerPickup
+  - kolikko
+  - BossActivation
   layers:
   - Default
   - TransparentFX

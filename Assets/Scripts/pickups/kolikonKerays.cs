@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class kolikonKerays : MonoBehaviour
 {
     public int kolikkoLaskenta;
+    public Text KolikotText;
 
         void Start()
     {
@@ -15,9 +17,18 @@ public class kolikonKerays : MonoBehaviour
     {
         if (mihinTormattiin.CompareTag("kolikko"))
         {
-            mihinTormattiin.gameObject.SetActive(false);
             kolikkoLaskenta = kolikkoLaskenta + 1;
-            Debug.Log("kolikkoja kerätty: " + kolikkoLaskenta);
+            mihinTormattiin.gameObject.SetActive(false);
         }
+    }
+
+    private void Update()
+    {
+        SetKolikotText();
+    }
+
+    void SetKolikotText()
+    {
+        KolikotText.text = "Kolikot: " + kolikkoLaskenta;
     }
 }

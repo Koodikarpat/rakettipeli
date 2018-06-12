@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4698015870209080}
   - component: {fileID: 212496250829772702}
   - component: {fileID: 58541965016626688}
+  - component: {fileID: 114547885897782748}
   m_Layer: 0
   m_Name: kolikko
   m_TagString: kolikko
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1786699077750102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: -13.6, z: 0}
   m_LocalScale: {x: 4.1934934, y: 3.920125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,9 +54,21 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.12, y: -0.12}
   serializedVersion: 2
-  m_Radius: 0.365
+  m_Radius: 0.3
+--- !u!114 &114547885897782748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1786699077750102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e4a951ab504ba4094390a20e65a42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pelaaja: {fileID: 0}
 --- !u!212 &212496250829772702
 SpriteRenderer:
   m_ObjectHideFlags: 1
