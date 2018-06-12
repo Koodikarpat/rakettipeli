@@ -15,8 +15,8 @@ public class kolikonKerays : MonoBehaviour
     {
         if (mihinTormattiin.CompareTag("kolikko"))
         {
-            mihinTormattiin.gameObject.SetActive(false);
             kolikkoLaskenta = kolikkoLaskenta + 1;
+            mihinTormattiin.gameObject.SetActive(false);
             Debug.Log("kolikkoja kerätty: " + kolikkoLaskenta);
         }
     }
