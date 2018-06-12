@@ -17,6 +17,7 @@ public class Levels : MonoBehaviour
             item.SetActive(false);
         }
     }
+
     public void LevelUp() { 
         if (level == 1) //Level 2.
         {

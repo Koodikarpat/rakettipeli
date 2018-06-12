@@ -17,6 +17,7 @@ public class PlayerHudStuff : MonoBehaviour {
         levelScript = GetComponent<Levels>();
         aluksenLeveli = levelScript.level;
         SetLevelText();
+        viimeLeveli = 1;
     }
 
 	void Update () {
