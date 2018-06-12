@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class kolikonKerays : MonoBehaviour
 {
     public int kolikkoLaskenta;
+    public Text KolikotText;
 
         void Start()
     {
@@ -17,7 +19,16 @@ public class kolikonKerays : MonoBehaviour
         {
             kolikkoLaskenta = kolikkoLaskenta + 1;
             mihinTormattiin.gameObject.SetActive(false);
-            Debug.Log("kolikkoja kerätty: " + kolikkoLaskenta);
         }
+    }
+
+    private void Update()
+    {
+        SetKolikotText();
+    }
+
+    void SetKolikotText()
+    {
+        KolikotText.text = "Kolikot: " + kolikkoLaskenta;
     }
 }

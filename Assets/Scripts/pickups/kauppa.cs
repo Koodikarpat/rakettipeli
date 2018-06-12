@@ -22,7 +22,6 @@ public class kauppa : MonoBehaviour
             {
                 if (kolikkojenmaara >= hinta)
                 {
-                    Debug.Log("kolikkojen määrä: " + kolikkojenmaara);
                     Debug.Log("kaupat tuli!");
                     varasto = varasto - 1;
 

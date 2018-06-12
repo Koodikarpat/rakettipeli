@@ -9,7 +9,6 @@ public class LevelPickup : MonoBehaviour {
         if (collision.tag == "Player") //Pelaajalla on vielä kolmas collider lapsena, jotta pickupit toimisivat. Jos käyttäisi pelaajan collidereita, pelaaja saisi aina 2 leveliä yhdestä pickupista.
         {
             collision.gameObject.GetComponent<Levels>().LevelUp();
-            print("Leveled up!");
             Destroy(gameObject);
         }
     }

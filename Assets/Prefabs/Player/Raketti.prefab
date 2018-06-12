@@ -612,6 +612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kolikkoLaskenta: 0
+  KolikotText: {fileID: 0}
 --- !u!114 &114931847162824772
 MonoBehaviour:
   m_ObjectHideFlags: 1
