@@ -72,24 +72,30 @@ public class Damage : MonoBehaviour {
         gameObject.layer = 9;
     }
 
+    public void TakeDamage(int damage)
+    {
+        print(healthScript.playerHealth);
+        if (healthScript.playerHealth > 1)
+        {
+            if (IsInvincible == false)
+            {
+                healthScript.playerHealth -= damage;
+                StartCoroutine(Invincibility());
+                return;
+            }
+        }
+
+        if (healthScript.playerHealth == 1) //Jos pelaaja ottaa vahinkoa ollessaan levelillä 1, hän kuolee, ja pyöritetään animaatiota Game Over-scriptistä.
+        {
+            GameOverScript.GameOverAnimation();
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Enemy" || collision.transform.tag== "EnemyBullet") //Jos pelaaja törmää viholliseen, hän ottaa vahinkoa.
         {
-            if (healthScript.playerHealth > 1)
-            {
-                if (IsInvincible == false)
-                {
-                    healthScript.playerHealth--;
-                    StartCoroutine(Invincibility());
-                    return;
-                }
-            }
-
-            if (healthScript.playerHealth == 1) //Jos pelaaja ottaa vahinkoa ollessaan levelillä 1, hän kuolee, ja pyöritetään animaatiota Game Over-scriptistä.
-            {
-                GameOverScript.GameOverAnimation();
-            }
+            TakeDamage(1);
         }
     }
 }
