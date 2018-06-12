@@ -17,14 +17,17 @@ public class EnemyRotator : MonoBehaviour {
 
     void Update()
     {
-        Position = targetPosition.transform;
+        if (targetPosition != null)
+        {
+            Position = targetPosition.transform;
 
-        suunta = targetPosition.transform.position - transform.position;
+            suunta = targetPosition.transform.position - transform.position;
 
-        kulma = Mathf.Atan2(suunta.y, suunta.x) * Mathf.Rad2Deg - 90;
+            kulma = Mathf.Atan2(suunta.y, suunta.x) * Mathf.Rad2Deg - 90;
 
-        
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, kulma) , nopeus);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, kulma), nopeus);
+        }
        
 
     }

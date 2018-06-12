@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212773885344492570}
   - component: {fileID: 114745692155743304}
   - component: {fileID: 114242564104978134}
-  - component: {fileID: 114350933192007940}
   m_Layer: 11
   m_Name: tykkiMissile (1)
   m_TagString: Enemy
@@ -42,6 +41,7 @@ GameObject:
   - component: {fileID: 114513887204578598}
   - component: {fileID: 60450739697061810}
   - component: {fileID: 114425927326449516}
+  - component: {fileID: 114286703488995948}
   m_Layer: 11
   m_Name: OGRocketBoss
   m_TagString: Enemy
@@ -60,7 +60,6 @@ GameObject:
   - component: {fileID: 212194435719976470}
   - component: {fileID: 114069994189741806}
   - component: {fileID: 114041744612623746}
-  - component: {fileID: 114746731316570172}
   m_Layer: 11
   m_Name: tykkiMissile
   m_TagString: Enemy
@@ -119,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1300993065212374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 161.87, y: -127.9, z: -0.36369824}
+  m_LocalPosition: {x: 161.11845, y: -130.75461, z: -0.36369824}
   m_LocalScale: {x: 1.9301668, y: 1.9301677, z: 1.9301677}
   m_Children:
   - {fileID: 4515341924694508}
@@ -134,7 +133,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1476672902655984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 5.14, z: 0}
+  m_LocalPosition: {x: 0.08, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4515341924694508}
@@ -147,7 +146,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1610021812132010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 5.14, z: 0}
+  m_LocalPosition: {x: 0.08, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4030491320983178}
@@ -305,11 +304,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8646215f79880e24888a19c1c2bf990a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missilePrefab: {fileID: 50464063306342482, guid: 0ec323c1904876f4ba11aff6110d223b,
+  missilePrefab: {fileID: 50464063306342482, guid: f2e6c5f5623d5354296f645544e185f7,
     type: 2}
   barrelEnd: {fileID: 4402620060028536}
   fireRate: 0.2
-  range: 30
+  range: 35
 --- !u!114 &114069994189741806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 1
+  nopeus: 1.2
 --- !u!114 &114242564104978134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -333,27 +332,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8646215f79880e24888a19c1c2bf990a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missilePrefab: {fileID: 50464063306342482, guid: 0ec323c1904876f4ba11aff6110d223b,
+  missilePrefab: {fileID: 50464063306342482, guid: f2e6c5f5623d5354296f645544e185f7,
     type: 2}
   barrelEnd: {fileID: 4390137745567316}
   fireRate: 0.2
-  range: 30
---- !u!114 &114350933192007940
+  range: 35
+--- !u!114 &114286703488995948
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1261802595201874}
+  m_GameObject: {fileID: 1300993065212374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthPoints: 1
-  ExplosionParticle: {fileID: 0}
-  onkoKuollut: 0
-  MaxLoopTime: 0
-  InvincibilityTime: 0
 --- !u!114 &114425927326449516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -393,23 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 1
---- !u!114 &114746731316570172
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1339237113008924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthPoints: 1
-  ExplosionParticle: {fileID: 0}
-  onkoKuollut: 0
-  MaxLoopTime: 0
-  InvincibilityTime: 0
+  nopeus: 1.2
 --- !u!212 &212194435719976470
 SpriteRenderer:
   m_ObjectHideFlags: 1

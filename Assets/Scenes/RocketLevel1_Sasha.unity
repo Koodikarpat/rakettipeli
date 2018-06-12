@@ -1543,6 +1543,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5249faf26cb8a74492850451bdde8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BossRestriction: {fileID: 1662315080}
+  BossLocation: {fileID: 1932530837}
+  Boss: {fileID: 1300993065212374, guid: cf9b14a9dabe734489905255efb90387, type: 2}
+  BossHasStarted: 0
+  CameraSizeInBossBattle: 15
+  BossMusic: {fileID: 8300000, guid: bad8a5802da43cf49b42373e2de552d5, type: 3}
 --- !u!61 &517393610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3670,9 +3676,9 @@ GameObject:
   - component: {fileID: 1662315083}
   - component: {fileID: 1662315082}
   - component: {fileID: 1662315081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BossRestriction
-  m_TagString: Untagged
+  m_TagString: LevelRestriction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
