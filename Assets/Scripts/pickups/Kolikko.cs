@@ -5,18 +5,19 @@ using UnityEngine;
 public class Kolikko : MonoBehaviour {
 
     kolikonKerays kolikonKerays;
+    public GameObject pelaaja;
 
     private void Start()
     {
-        kolikonKerays = GetComponent<kolikonKerays>();
+        kolikonKerays = pelaaja.GetComponent<kolikonKerays>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            gameObject.SetActive(false);
             kolikonKerays.kolikkoLaskenta++;
+            gameObject.SetActive(false);
             Debug.Log("kolikkoja kerätty: " + kolikonKerays.kolikkoLaskenta);
         }
     }

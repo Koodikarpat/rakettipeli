@@ -639,7 +639,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Up!
+  m_Text: '
+
+'
 --- !u!114 &114814867573545822
 MonoBehaviour:
   m_ObjectHideFlags: 1
