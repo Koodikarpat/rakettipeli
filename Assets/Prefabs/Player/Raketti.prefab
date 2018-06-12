@@ -166,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1970254931365704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 380.4, y: 94.7, z: 0}
+  m_LocalPosition: {x: 312.9, y: 121.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4097055482330734}
@@ -953,8 +953,6 @@ MonoBehaviour:
   ExplosionSprite: {fileID: 1157636060449822, guid: 60c03e2f46a0d894a93c8e46a0698ade,
     type: 2}
   CanvasesToDestroyWhenGameOver:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
 --- !u!212 &212359547516032740
 SpriteRenderer:
