@@ -1543,12 +1543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5249faf26cb8a74492850451bdde8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BossRestriction: {fileID: 1662315080}
-  BossLocation: {fileID: 1932530837}
-  Boss: {fileID: 1300993065212374, guid: cf9b14a9dabe734489905255efb90387, type: 2}
-  BossHasStarted: 0
-  CameraSizeInBossBattle: 10
-  BossMusic: {fileID: 8300000, guid: bad8a5802da43cf49b42373e2de552d5, type: 3}
 --- !u!61 &517393610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1906,6 +1900,12 @@ Transform:
   m_Father: {fileID: 912275615}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 27.5}
+--- !u!114 &686303462 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114996999489318220, guid: 436fe5fb527ef3a4aa1bb782f0a1801b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853180659}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &715164797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2645,6 +2645,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 114605839052144012, guid: b5c20124bc158984b96625d4efd9b2f1,
+        type: 2}
+      propertyPath: KolikotText
+      value: 
+      objectReference: {fileID: 686303462}
     m_RemovedComponents:
     - {fileID: 60980211577712930, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
