@@ -39,6 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4414671642272136}
   - component: {fileID: 212443832804738726}
+  - component: {fileID: 114948846717776764}
   m_Layer: 0
   m_Name: avaruus
   m_TagString: Untagged
@@ -128,6 +129,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraDistance: 1
+  CameraSizeAtStart: 10
+--- !u!114 &114948846717776764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299093492792266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c566ee1b54cdac42a61c6ae79278c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &124479152506705116
 Behaviour:
   m_ObjectHideFlags: 1
