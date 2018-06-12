@@ -17,37 +17,31 @@ public class Levels : MonoBehaviour
             item.SetActive(false);
         }
     }
-    void OnColliderEnter2D(Collider2D collision)
-    {
-        Debug.Log(collision.gameObject.name);
-        if (collision.transform.tag == "PowerUp") //Powerupin saadessaan pelaajan leveli nousee, jolloin pelaaja saa lisää tykkejä käyttöönsä. 1 level = 1 tykki lisää.
+    public void LevelUp() { 
+        if (level == 1) //Level 2.
         {
-            if (level == 1) //Level 2.
+            level++;
+            foreach (GameObject item in Level1Barrels)
             {
-                level++;
-                foreach (GameObject item in Level1Barrels)
-                {
-                    item.SetActive(false);
-
-                }
-                foreach (GameObject item in Level2Barrels)
-                {
-                    item.SetActive(true);
-                }
-                Destroy(collision.gameObject);
-                return;
+                item.SetActive(false);
 
             }
-
-            if (level == 2) // Level 3. Käytetään yhtä aikaa ensimmäisen ja toisen tason barreleita.
+            foreach (GameObject item in Level2Barrels)
             {
-                level++;
-                foreach (GameObject item in Level1Barrels)
-                {
-                    item.SetActive(true);
-                }
-                Destroy(collision.gameObject);
+                item.SetActive(true);
+            }
+            return;
+
+        }
+
+        if (level == 2) // Level 3. Käytetään yhtä aikaa ensimmäisen ja toisen tason barreleita.
+        {
+            level++;
+            foreach (GameObject item in Level1Barrels)
+            {
+                item.SetActive(true);
             }
         }
     }
 }
+
