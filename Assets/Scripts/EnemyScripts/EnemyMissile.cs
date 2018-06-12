@@ -15,4 +15,12 @@ public class EnemyMissile : MonoBehaviour {
 	void Update () {
         transform.Translate(new Vector3(0, 1, 0) * nopeus);
 	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<Damage>().TakeDamage(1);
+        }
+    }
 }
