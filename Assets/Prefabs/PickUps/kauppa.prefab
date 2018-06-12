@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   varasto: 1
   hinta: 1
-  tuote: {fileID: 1684697519210704, guid: 110a5d0f05a789e469aed5f6805778ac, type: 2}
+  tuote: {fileID: 1130559169833372, guid: 4b0927ed34c788d44b2d1a0f2309fbdc, type: 2}
   "voimanLis\xE4ys": 20
 --- !u!212 &212102509264578342
 SpriteRenderer:
