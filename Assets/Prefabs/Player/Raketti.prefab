@@ -167,8 +167,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1970254931365704}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 113.4, y: -127.2, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.3961153, y: -6.361454, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4097055482330734}
@@ -178,7 +178,7 @@ Transform:
   - {fileID: 4225984172961778}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4918581490854792
 Transform:
   m_ObjectHideFlags: 1
@@ -701,12 +701,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce340ff8ae28694d8ba1c82dc858277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 114850775052221482, guid: 436fe5fb527ef3a4aa1bb782f0a1801b,
-    type: 2}
-  levelUpText: {fileID: 114784172195554588, guid: 436fe5fb527ef3a4aa1bb782f0a1801b,
-    type: 2}
-  levelDownText: {fileID: 114613003912401110, guid: 436fe5fb527ef3a4aa1bb782f0a1801b,
-    type: 2}
+  levelText: {fileID: 0}
+  levelUpText: {fileID: 0}
+  levelDownText: {fileID: 0}
 --- !u!114 &114605839052144012
 MonoBehaviour:
   m_ObjectHideFlags: 1

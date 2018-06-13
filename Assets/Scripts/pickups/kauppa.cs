@@ -9,7 +9,7 @@ public class kauppa : MonoBehaviour
     public int hinta = 1;
     public GameObject tuote;
     GameObject pelaaja;
-    public float voimanLisäys;
+    public float syöttöNopeus;
     Vector2 suunta;
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
@@ -29,7 +29,7 @@ public class kauppa : MonoBehaviour
                     suunta = (pelaaja.transform.position - transform.position);
                     Rigidbody2D kolikkoInstance;
                     kolikkoInstance = Instantiate(tuote.GetComponent<Rigidbody2D>(), transform.position, transform.rotation)as Rigidbody2D;
-                    kolikkoInstance.AddForce(suunta * voimanLisäys);
+                    kolikkoInstance.AddForce(suunta * syöttöNopeus);
 
                     mihinTormattiin.GetComponent<kolikonKerays>().kolikkoLaskenta -= hinta;
                 }

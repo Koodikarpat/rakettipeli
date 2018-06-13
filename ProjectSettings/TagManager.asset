@@ -12,6 +12,7 @@ TagManager:
   - PlayerPickup
   - kolikko
   - BossActivation
+  - HealthPickUp
   layers:
   - Default
   - TransparentFX
