@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 60450739697061810}
   - component: {fileID: 114425927326449516}
   - component: {fileID: 114286703488995948}
+  - component: {fileID: 114494385137913360}
   m_Layer: 11
   m_Name: OGRocketBoss
   m_TagString: Enemy
@@ -359,6 +360,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55eaccdb6b2a859488179c82260d216d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114494385137913360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300993065212374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caea6a9f40d4ef439c76d043932b285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BossHealthBarCanvas: {fileID: 1870969809152284, guid: 745268352a4030d4eb8b0ac0741967a6,
+    type: 2}
+  InstantiatedHealthBarCanvas: {fileID: 0}
 --- !u!114 &114513887204578598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,6 +391,7 @@ MonoBehaviour:
   onkoKuollut: 0
   MaxLoopTime: 3
   InvincibilityTime: 0.1
+  BossHasStarted: 1
 --- !u!114 &114745692155743304
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,6 +11,7 @@ public class BossActivate : MonoBehaviour {
     public bool BossHasStarted;
     public float CameraSizeInBossBattle;
     public AudioClip BossMusic;
+    private GameObject InstantiatedBoss;
 
     private void Start()
     {
@@ -31,7 +32,7 @@ public class BossActivate : MonoBehaviour {
         Camera.GetComponent<Camera>().orthographicSize = 20;
         Camera.transform.position = new Vector3(BossLocation.transform.position.x, BossLocation.transform.position.y, -1);
         yield return new WaitForSeconds(1);
-        Instantiate(Boss, BossLocation.transform.position, Quaternion.identity);
+        InstantiatedBoss = Instantiate(Boss, BossLocation.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1);
         Camera.GetComponent<CameraController>().enabled = true;
         Camera.GetComponent<Camera>().orthographicSize = CameraSizeInBossBattle;
@@ -39,7 +40,7 @@ public class BossActivate : MonoBehaviour {
         Player.GetComponent<AudioSource>().clip = BossMusic;
         Player.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1);
-        BossHasStarted = true;
+        InstantiatedBoss.gameObject.GetComponent<EnemyHealth>().BossHasStarted = true;
         
 
         

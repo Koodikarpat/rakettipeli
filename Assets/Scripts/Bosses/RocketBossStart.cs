@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RocketBossStart : MonoBehaviour {
 
@@ -17,7 +18,7 @@ public class RocketBossStart : MonoBehaviour {
     void Update () {
         if (HasBeenActivated == false)
         {
-            if (GameObject.FindGameObjectWithTag("BossActivation").GetComponent<BossActivate>().BossHasStarted == true)
+            if (GetComponent<EnemyHealth>().BossHasStarted == true)
             {
                 foreach (Transform child in transform)
                 {
@@ -27,8 +28,13 @@ public class RocketBossStart : MonoBehaviour {
                         childitem.gameObject.SetActive(true);
                     }
                     HasBeenActivated = true;
+                    
                     break;
                 }
+            }
+            if (GetComponent<EnemyHealth>().HealthPoints <= 0)
+            {
+
             }
         }
 	}

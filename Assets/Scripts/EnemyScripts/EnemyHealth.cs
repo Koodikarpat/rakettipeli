@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour {
 
@@ -10,10 +11,20 @@ public class EnemyHealth : MonoBehaviour {
     public int MaxLoopTime;
     private int LoopedTime;
     public float InvincibilityTime;
+    public bool BossHasStarted;
 
     private void Start()
     {
         LoopedTime = 0;
+        BossHasStarted = false;
+    }
+
+    void UpdateHealthBar() //Tämä funktio päivittää healthbarin arvon, kun vihollinen ottaa vahinkoa. Tätä käytetään ainoastaan bosseissa.
+    {
+        if (GetComponent<BossHealthBar>() != null)
+        {
+            GetComponent<BossHealthBar>().InstantiatedHealthBarCanvas.transform.Find("HealthSlider").GetComponent<Slider>().value = GetComponent<EnemyHealth>().HealthPoints;
+        }
     }
 
     IEnumerator  DamageFlash()
@@ -28,7 +39,16 @@ public class EnemyHealth : MonoBehaviour {
         }
         LoopedTime = 0;
     }
-
+    void DestroyEnemy()
+    {
+        print("Destroyed enemy");
+        if (GetComponent<BossHealthBar>() != null)
+        {
+            Destroy(GetComponent<BossHealthBar>().InstantiatedHealthBarCanvas);
+        }
+        Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
+        onkoKuollut = true;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Bullet" || collision.tag == "EnemyBullet")
@@ -37,9 +57,9 @@ public class EnemyHealth : MonoBehaviour {
             HealthPoints--;
             if (HealthPoints <= 0)
             {
-                Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
-                onkoKuollut = true;
+                DestroyEnemy();
             }
+            UpdateHealthBar();
             StartCoroutine(DamageFlash());
 
             }
@@ -50,11 +70,10 @@ public class EnemyHealth : MonoBehaviour {
         {
             HealthPoints--;
 
-            
+            UpdateHealthBar();
             if (HealthPoints <= 0)
             {
-                Instantiate(ExplosionParticle, gameObject.transform.position, Quaternion.identity);
-                onkoKuollut = true;
+                DestroyEnemy();
             }
             StartCoroutine(DamageFlash());
     }

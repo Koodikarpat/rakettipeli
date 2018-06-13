@@ -74,7 +74,7 @@ public class Damage : MonoBehaviour {
 
     public void TakeDamage(int damage)
     {
-        if (healthScript.playerHealth > 1)
+        if (healthScript.playerHealth >= 1)
         {
             if (IsInvincible == false)
             {
@@ -84,7 +84,7 @@ public class Damage : MonoBehaviour {
             }
         }
 
-        if (healthScript.playerHealth == 1) //Jos pelaaja ottaa vahinkoa ollessaan levelillä 1, hän kuolee, ja pyöritetään animaatiota Game Over-scriptistä.
+        if (healthScript.playerHealth == 0) //Jos pelaaja ottaa vahinkoa ollessaan levelillä 1, hän kuolee, ja pyöritetään animaatiota Game Over-scriptistä.
         {
             GameOverScript.GameOverAnimation();
         }
