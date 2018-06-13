@@ -10,11 +10,16 @@ public class vihollinen : MonoBehaviour
 
     private void Update()
     {
-        aika = aika + Time.deltaTime;
+        /*aika = aika + Time.deltaTime;
         if (aika > 1f)
         {
-            Instantiate(ammus, ammusLahtee.position, ammusLahtee.rotation);
+            Ammu();
             aika = 0f;
-        }
+        }*/
+    }
+
+    public void Ammu()
+    {
+        Instantiate(ammus, ammusLahtee.position, ammusLahtee.rotation);
     }
 }

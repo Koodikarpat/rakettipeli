@@ -20,9 +20,9 @@ public class sirkkeliliikkuminen : MonoBehaviour
 
     void Update ()
     {
-        {
+       /* {
             transform.Rotate(munvektori * Time.deltaTime * nopeus);
-        }
+        }*/
         Aika = Aika + Time.deltaTime;
         if (Aika < matka)
         {
