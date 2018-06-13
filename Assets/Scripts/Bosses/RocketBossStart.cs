@@ -9,6 +9,7 @@ public class RocketBossStart : MonoBehaviour {
 
     private void Start()
     {
+        HasBeenActivated = false;
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(false);
@@ -20,22 +21,19 @@ public class RocketBossStart : MonoBehaviour {
         {
             if (GetComponent<EnemyHealth>().BossHasStarted == true)
             {
+                print("Spawned boss");
                 foreach (Transform child in transform)
                 {
-                    GameObject.FindGameObjectWithTag("BossActivation").SetActive(false);
-                    foreach (Transform childitem in transform)
-                    {
-                        childitem.gameObject.SetActive(true);
-                    }
-                    HasBeenActivated = true;
-                    
-                    break;
+                    child.gameObject.SetActive(true);
+                }
+                GameObject.FindGameObjectWithTag("BossActivation").SetActive(false);
+                HasBeenActivated = true;
                 }
             }
-            if (GetComponent<EnemyHealth>().HealthPoints <= 0)
-            {
+        if (GetComponent<EnemyHealth>().HealthPoints <= 0)
+        {
 
-            }
         }
-	}
+    }
 }
+

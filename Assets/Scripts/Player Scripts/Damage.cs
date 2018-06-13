@@ -80,7 +80,6 @@ public class Damage : MonoBehaviour {
             {
                 healthScript.playerHealth -= damage;
                 StartCoroutine(Invincibility());
-                return;
             }
         }
 

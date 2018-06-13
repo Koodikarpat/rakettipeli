@@ -9,7 +9,7 @@ public class EnemyAmmusDestruction : MonoBehaviour {
         Destroy(gameObject, 3f);
     }
 
-    private void OnCollsionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Player" || collision.transform.tag == "LevelRestriction")
         {

@@ -16,7 +16,6 @@ public class EnemyHealth : MonoBehaviour {
     private void Start()
     {
         LoopedTime = 0;
-        BossHasStarted = false;
     }
 
     void UpdateHealthBar() //Tämä funktio päivittää healthbarin arvon, kun vihollinen ottaa vahinkoa. Tätä käytetään ainoastaan bosseissa.
