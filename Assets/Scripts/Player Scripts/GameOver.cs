@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour {
     public GameObject ExplosionSprite;
     public string[] tuhottavatObjectit;
     List<GameObject> CanvasesToDestroyWhenGameOver = new List<GameObject>();
-
+    
     void Start () {
         foreach (string tuhottavanObjectinNimi in tuhottavatObjectit)
         {
