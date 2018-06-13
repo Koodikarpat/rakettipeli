@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317509323914854}
   m_LocalRotation: {x: -0, y: -0, z: -0.5539668, w: 0.8325388}
-  m_LocalPosition: {x: 0, y: -6.634, z: 0}
+  m_LocalPosition: {x: -46.4, y: 67.1, z: 0}
   m_LocalScale: {x: 0.6078986, y: 0.6509867, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nopeus: 100
-  "ykk\xF6svektori": {x: 0, y: 0, z: 0}
+  "ykk\xF6svektori": {x: 0.06, y: 0, z: 0}
   nopee: 5
   matka: 1
 --- !u!212 &212180377032551478
