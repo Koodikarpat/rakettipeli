@@ -82,14 +82,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1171504400141682}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -73.00754, y: 14.139573, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -210, y: -145, z: 0}
+  m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children:
   - {fileID: 4516469667918898}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4516469667918898
 Transform:
   m_ObjectHideFlags: 1
@@ -195,6 +195,7 @@ MonoBehaviour:
   onkoKuollut: 0
   MaxLoopTime: 0
   InvincibilityTime: 0
+  BossHasStarted: 0
 --- !u!114 &114882167753951380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,7 +211,7 @@ MonoBehaviour:
     type: 2}
   barrelEnd: {fileID: 4056735691569946}
   fireRate: 2
-  range: 20
+  range: 100
 --- !u!212 &212094963558263018
 SpriteRenderer:
   m_ObjectHideFlags: 1
