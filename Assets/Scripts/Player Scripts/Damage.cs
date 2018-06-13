@@ -74,7 +74,6 @@ public class Damage : MonoBehaviour {
 
     public void TakeDamage(int damage)
     {
-        print(healthScript.playerHealth);
         if (healthScript.playerHealth > 1)
         {
             if (IsInvincible == false)

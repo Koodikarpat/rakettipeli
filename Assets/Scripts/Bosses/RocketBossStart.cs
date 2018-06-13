@@ -17,7 +17,7 @@ public class RocketBossStart : MonoBehaviour {
     void Update () {
         if (HasBeenActivated == false)
         {
-            if (GameObject.FindGameObjectWithTag("BossActivation").GetComponent<OGRocketBossActivate>().BossHasStarted == true)
+            if (GameObject.FindGameObjectWithTag("BossActivation").GetComponent<BossActivate>().BossHasStarted == true)
             {
                 foreach (Transform child in transform)
                 {

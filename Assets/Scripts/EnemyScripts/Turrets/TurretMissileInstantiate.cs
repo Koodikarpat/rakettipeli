@@ -23,20 +23,23 @@ public class TurretMissileInstantiate : MonoBehaviour {
 
     void Update()
     {
-        Position = targetPosition.transform;
-        
-        aika = aika + Time.deltaTime;
-
-        vektori = Position.transform.position - transform.position;
-
-        if (vektori.magnitude < range)
+        if (targetPosition.GetComponent<PlayerHealth>().playerHealth > 0)
         {
-            if (aika > fireRate)
-            {
-                suunta = barrelEnd.transform.position - transform.position;
+            Position = targetPosition.transform;
 
-                 Instantiate(missilePrefab, barrelEnd.position, barrelEnd.rotation);                
-                aika = 0;
+            aika = aika + Time.deltaTime;
+
+            vektori = Position.transform.position - transform.position;
+
+            if (vektori.magnitude < range)
+            {
+                if (aika > fireRate)
+                {
+                    suunta = barrelEnd.transform.position - transform.position;
+
+                    Instantiate(missilePrefab, barrelEnd.position, barrelEnd.rotation);
+                    aika = 0;
+                }
             }
         }
 

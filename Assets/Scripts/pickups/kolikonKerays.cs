@@ -29,6 +29,6 @@ public class kolikonKerays : MonoBehaviour
 
     void SetKolikotText()
     {
-        KolikotText.text = "Kolikot: " + kolikkoLaskenta;
+        KolikotText.text = "x " + kolikkoLaskenta;
     }
 }

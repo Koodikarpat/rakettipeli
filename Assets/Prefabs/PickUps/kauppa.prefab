@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212102509264578342}
   - component: {fileID: 114666441677177482}
   - component: {fileID: 61399840106571532}
-  - component: {fileID: 61967123746143448}
-  m_Layer: 0
+  - component: {fileID: 61685738362493580}
+  m_Layer: 12
   m_Name: kauppa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
---- !u!61 &61967123746143448
+--- !u!61 &61685738362493580
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   varasto: 1
   hinta: 1
-  tuote: {fileID: 1684697519210704, guid: 110a5d0f05a789e469aed5f6805778ac, type: 2}
+  tuote: {fileID: 1130559169833372, guid: 4b0927ed34c788d44b2d1a0f2309fbdc, type: 2}
   "voimanLis\xE4ys": 20
 --- !u!212 &212102509264578342
 SpriteRenderer:

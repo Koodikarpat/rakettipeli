@@ -35,7 +35,6 @@ public class kauppa : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("kolikkojen määrä: " + kolikkojenmaara);
                     Debug.Log("Ei kauppoja");
                 }
             }

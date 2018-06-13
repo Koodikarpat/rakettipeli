@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class EnemyAmmusDestruction : MonoBehaviour {
 
+    public float Lifetime;
+
     void Start()
     {
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, Lifetime);
     }
 
-    private void OnCollsionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Player" || collision.transform.tag == "LevelRestriction")
         {

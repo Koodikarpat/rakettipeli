@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OGRocketBossActivate : MonoBehaviour {
+public class BossActivate : MonoBehaviour {
     public GameObject BossRestriction;
     private GameObject Player;
     private GameObject Camera;
@@ -23,7 +23,7 @@ public class OGRocketBossActivate : MonoBehaviour {
         Player.GetComponent<PlayerMovement>().enabled = false;
         Camera = GameObject.FindGameObjectWithTag("MainCamera");
         Camera.GetComponent<CameraController>().enabled = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         Camera.transform.position = new Vector3(BossRestriction.transform.position.x, BossRestriction.transform.position.y, -1);
         yield return new WaitForSeconds(1);
         BossRestriction.SetActive(true);
@@ -38,6 +38,7 @@ public class OGRocketBossActivate : MonoBehaviour {
         Player.GetComponent<PlayerMovement>().enabled = true;
         Player.GetComponent<AudioSource>().clip = BossMusic;
         Player.GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(1);
         BossHasStarted = true;
         
 
