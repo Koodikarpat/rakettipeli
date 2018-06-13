@@ -9,15 +9,16 @@ public class PlayerHudStuff : MonoBehaviour {
     int aluksenLeveli;
     int viimeLeveli;
 
-    public Text levelText;
-    public Text levelUpText;
-    public Text levelDownText;
+    Text levelText;
+    Text levelUpText;
 
-    void Start () {
+    void Awake () {
         levelScript = GetComponent<Levels>();
         aluksenLeveli = levelScript.level;
-        SetLevelText();
         viimeLeveli = 1;
+        levelText = GameObject.Find("levelText").GetComponent<Text>();
+        levelUpText = GameObject.Find("LevelUpText").GetComponent<Text>();
+        SetLevelText();
     }
 
 	void Update () {
@@ -28,12 +29,6 @@ public class PlayerHudStuff : MonoBehaviour {
         {
             levelUpText.gameObject.SetActive(true);
             levelUpText.text = "Level Up!";
-        }
-
-        if (aluksenLeveli < viimeLeveli)
-        {
-            levelDownText.gameObject.SetActive(true);
-            levelDownText.text = "Level Down ;C";
         }
 
         viimeLeveli = aluksenLeveli;
