@@ -21,10 +21,20 @@ public class AvainFollow : MonoBehaviour {
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D mihinTormattiin) {
-        avainTormays = true;
-        if (mihinTormattiin.gameObject.tag.Equals("Door") && mihinTormattiin.GetComponent<OvenAvaus>().saapuuOvelle)
+        if (mihinTormattiin.gameObject.tag.Equals("Player"))
         {
-            Destroy(gameObject);
+            avainTormays = true;
+        }
+        if (mihinTormattiin.gameObject.tag.Equals("Door"))
+        {
+            if (mihinTormattiin.GetComponent<OvenAvaus>().saapuuVihreaOvelle && gameObject.name.Equals("avainkorttivihrea"))
+            {
+                Destroy(gameObject);
+            }
+            if (mihinTormattiin.GetComponent<OvenAvaus>().saapuuPunaOvelle && gameObject.name.Equals("avainkorttipunainen"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

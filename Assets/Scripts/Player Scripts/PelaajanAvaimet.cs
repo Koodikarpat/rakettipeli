@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class PelaajanAvaimet : MonoBehaviour {
 
-    public bool onkoPelaajallaAvain;
+    public bool onkoPelaajallaVihreaAvain;
     public bool onkoPelaajallaPunaAvain;
 }

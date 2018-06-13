@@ -7,7 +7,8 @@ public class OvenAvaus : MonoBehaviour {
     public bool onkoPelaajallaAvain;
     Animator m_Animator;
     private GameObject avainkortti;
-    public bool saapuuOvelle;
+    public bool saapuuVihreaOvelle;
+    public bool saapuuPunaOvelle;
 
     void Start()
     {
@@ -17,19 +18,32 @@ public class OvenAvaus : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
 
-    { 
-    if (mihinTormattiin.gameObject.tag.Equals("Player") && mihinTormattiin.GetComponent<PelaajanAvaimet>().onkoPelaajallaAvain)
+    {
+        if (mihinTormattiin.gameObject.tag.Equals("Player")) 
         {
-            Debug.Log ("Ovi avautuu");
-        
-            m_Animator.SetTrigger("AvaaOvi2");
+            if (gameObject.name.Equals("kaksoisovetvihrea"))
+            {
+                if (mihinTormattiin.GetComponent<PelaajanAvaimet>().onkoPelaajallaVihreaAvain)
+                {
 
-            saapuuOvelle = true;
+                    m_Animator.SetTrigger("AvaaOvi");
+                    saapuuVihreaOvelle = true;
+                }
+            }
+            if (gameObject.name.Equals("kaksoisovetpuna"))
+            {
+                if (mihinTormattiin.GetComponent<PelaajanAvaimet>().onkoPelaajallaPunaAvain)
+                {
+
+                    m_Animator.SetTrigger("AvaaOvi");
+                    saapuuPunaOvelle = true;
+                }
+            }
+
         }
-        else
-        {
-            Debug.Log ("Ovi ei avaudu");
-        }
+            
     }
-
 }
+
+
+

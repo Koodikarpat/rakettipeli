@@ -8,8 +8,20 @@ public class AvainTrigger : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
     {
-        Debug.Log("Avain saatu");
-        bool onkoPelaajallaAvain = true;
-        mihinTormattiin.GetComponent<PelaajanAvaimet>().onkoPelaajallaAvain = true;
+        if (mihinTormattiin.gameObject.tag.Equals("Player"))
+        {
+            if (gameObject.name.Equals("avainkorttivihrea"))
+            {
+                mihinTormattiin.GetComponent<PelaajanAvaimet>().onkoPelaajallaVihreaAvain = true;
+            }
+            if (gameObject.name.Equals("avainkorttipunainen"))
+            {
+                mihinTormattiin.GetComponent<PelaajanAvaimet>().onkoPelaajallaPunaAvain = true;
+            }
+        }
+            
+
+            
+
     }
 }
