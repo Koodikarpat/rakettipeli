@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour {
 
-    public Canvas GameOverCanvas;
+    public GameObject GameOverCanvas;
     public GameObject ExplosionSprite;
-    public List<Canvas> CanvasesToDestroyWhenGameOver = new List<Canvas>();
+    public string[] tuhottavatObjectit;
+    List<GameObject> CanvasesToDestroyWhenGameOver = new List<GameObject>();
 
-	// Use this for initialization
-	void Start () {
-        foreach (Canvas item in CanvasesToDestroyWhenGameOver)
+    void Start () {
+        foreach (string tuhottavanObjectinNimi in tuhottavatObjectit)
+        {
+            CanvasesToDestroyWhenGameOver.Add(GameObject.Find(tuhottavanObjectinNimi));
+        }
+
+        foreach (GameObject item in CanvasesToDestroyWhenGameOver)
         {
             item.gameObject.SetActive(true);
         }
@@ -19,7 +24,6 @@ public class GameOver : MonoBehaviour {
         //GameOverCanvas.gameObject.SetActive(false);
     }
 	
-	// Update is called once per frame
 	public void GameOverAnimation()
     {
 
@@ -27,7 +31,7 @@ public class GameOver : MonoBehaviour {
         Instantiate(GameOverCanvas, gameObject.transform.position, Quaternion.identity);
         Instantiate(ExplosionSprite, gameObject.transform.position, Quaternion.identity);
         gameObject.SetActive(false);
-        foreach (Canvas item in CanvasesToDestroyWhenGameOver)
+        foreach (GameObject item in CanvasesToDestroyWhenGameOver)
         {
             item.gameObject.SetActive(false);
         }

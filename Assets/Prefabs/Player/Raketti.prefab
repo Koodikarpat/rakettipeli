@@ -701,9 +701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce340ff8ae28694d8ba1c82dc858277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 0}
-  levelUpText: {fileID: 0}
-  levelDownText: {fileID: 0}
 --- !u!114 &114605839052144012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -716,7 +713,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kolikkoLaskenta: 0
-  KolikotText: {fileID: 0}
 --- !u!114 &114931847162824772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -774,12 +770,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582edf73c4eb0414a9f208484e9dc6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameOverCanvas: {fileID: 223185402782537708, guid: 57269bfa45e50cd4f82aac3c03b6ca48,
+  GameOverCanvas: {fileID: 1031210480001592, guid: 57269bfa45e50cd4f82aac3c03b6ca48,
     type: 2}
   ExplosionSprite: {fileID: 1157636060449822, guid: 60c03e2f46a0d894a93c8e46a0698ade,
     type: 2}
-  CanvasesToDestroyWhenGameOver:
-  - {fileID: 0}
+  tuhottavatObjectit:
+  - PlayerHUD_Canvas
 --- !u!212 &212359547516032740
 SpriteRenderer:
   m_ObjectHideFlags: 1
