@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 114383226640764122}
   - component: {fileID: 50996491089426080}
   - component: {fileID: 61581580657751220}
+  - component: {fileID: 114642959247787726}
   m_Layer: 11
   m_Name: Vihollisen ammus
-  m_TagString: EnemyBullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +98,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c5ee96529393bd48a453c40ad794d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114642959247787726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244327146412468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212571402755958550
