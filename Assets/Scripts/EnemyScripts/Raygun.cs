@@ -38,17 +38,26 @@ public class Raygun : MonoBehaviour
         Debug.Log(aika);
         RaycastHit2D[] hits;
         Debug.DrawRay(barrelEnd.transform.position, transform.up);
-        hits = Physics2D.RaycastAll(barrelEnd.transform.position, transform.up, 100f); // Tunnistaa kaikki objektit  100 yksikön päähän tykin edessä.
+        hits = Physics2D.RaycastAll(barrelEnd.transform.position, transform.up, 10000); // Tunnistaa kaikki objektit  100 yksikön päähän tykin edessä
 
-        foreach (RaycastHit2D hit in hits)
+        float pituus = 10000;
+        
+        foreach(RaycastHit2D hit in hits)
         {
-            if (hit.transform.tag == "LevelRestriction")
+            if(hit.distance < pituus)
             {
-                tähtäin.transform.localScale = new Vector3(1, hit.distance, 1);
-                ammus.transform.localScale = new Vector3(1, hit.distance, 1);//muuttaa tähtäimen ja ammuksen pituuden oikeaksi.
-
+                if (hit.transform.tag == "LevelRestriction")
+                {
+                    pituus = hit.distance;
+                }
             }
         }
+
+      
+                tähtäin.transform.localScale = new Vector3(1, pituus, 1);
+                ammus.transform.localScale = new Vector3(1, pituus, 1);//muuttaa tähtäimen ja ammuksen pituuden oikeaksi.
+
+
         if (active == false )
         {
             GetComponent<BoxCollider2D>().enabled = false;
