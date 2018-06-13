@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class kolikonKerays : MonoBehaviour
 {
     public int kolikkoLaskenta;
-    public Text KolikotText;
+    Text KolikotText;
 
         void Start()
     {
         kolikkoLaskenta = 0;
+        KolikotText = GameObject.Find("KolikotText").GetComponent<Text>();
     }
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
