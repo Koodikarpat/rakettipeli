@@ -107,9 +107,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4068544974671584}
   - component: {fileID: 95013938051829984}
-  - component: {fileID: 114649459669168968}
+  - component: {fileID: 114398712982636708}
   m_Layer: 0
-  m_Name: RocketBoss 2
+  m_Name: RocketBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,6 +517,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114398712982636708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1359630692165364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47c72e84f8ac9645bf8521a7ff0cc79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114585161545502544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -528,26 +539,28 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BossRestriction: {fileID: 1909337900575276}
-  BossLocation: {fileID: 4146779309271142}
-  Boss: {fileID: 1300993065212374, guid: cf9b14a9dabe734489905255efb90387, type: 2}
-  BossHasStarted: 0
-  CameraSizeInBossBattle: 15
-  BossMusic: {fileID: 8300000, guid: bad8a5802da43cf49b42373e2de552d5, type: 3}
-  BossAppearance: {fileID: 0}
-  BossRestrictionHeight: 0
-  AnimationTrigger: 
---- !u!114 &114398712982636708
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1359630692165364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a47c72e84f8ac9645bf8521a7ff0cc79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
 --- !u!114 &114669510432960158
 MonoBehaviour:
   m_ObjectHideFlags: 1
