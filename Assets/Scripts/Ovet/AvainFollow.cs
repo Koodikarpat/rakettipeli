@@ -25,15 +25,18 @@ public class AvainFollow : MonoBehaviour {
         {
             avainTormays = true;
         }
-        if (mihinTormattiin.gameObject.tag.Equals("Door"))
+        if (mihinTormattiin.gameObject.name.Equals("kaksoisovetvihrea")||mihinTormattiin.gameObject.name.Equals("kaksoisovetpuna"))
         {
+            Debug.Log("On törmätty oveen");
             if (mihinTormattiin.GetComponent<OvenAvaus>().saapuuVihreaOvelle && gameObject.name.Equals("avainkorttivihrea"))
             {
                 Destroy(gameObject);
+                player.GetComponent<PelaajanAvaimet>().onkoPelaajallaVihreaAvain = false;
             }
             if (mihinTormattiin.GetComponent<OvenAvaus>().saapuuPunaOvelle && gameObject.name.Equals("avainkorttipunainen"))
             {
                 Destroy(gameObject);
+                player.GetComponent<PelaajanAvaimet>().onkoPelaajallaPunaAvain = false;
             }
         }
     }
