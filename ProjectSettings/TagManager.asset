@@ -13,6 +13,7 @@ TagManager:
   - kolikko
   - BossActivation
   - Door
+  - HealthPickUp
   layers:
   - Default
   - TransparentFX

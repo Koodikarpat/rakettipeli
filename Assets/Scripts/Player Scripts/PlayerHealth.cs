@@ -1,24 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
 
     public int playerHealth;
-    Damage damageScript;
+    int viimePlayerHealth;
 
-    private void Start()
+    Text healthUpText;
+
+    private void Awake()
     {
-        damageScript = GetComponent<Damage>();
         playerHealth = 3;
+        healthUpText = GameObject.Find("HealthUpText").GetComponent<Text>();
+        viimePlayerHealth = 3;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void Update()
     {
-        if (collision.transform.tag == "HealthPickUp")
+        if(playerHealth > viimePlayerHealth)
         {
-                playerHealth++;
-                Destroy(collision.gameObject);
+            healthUpText.gameObject.SetActive(true);
+            healthUpText.text = ("Health Up!");
         }
+
+        viimePlayerHealth = playerHealth;
     }
 }

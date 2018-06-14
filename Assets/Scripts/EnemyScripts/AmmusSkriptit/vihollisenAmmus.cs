@@ -10,7 +10,6 @@ public class vihollisenAmmus : MonoBehaviour
     {
         if (collision.transform.tag == "Player" || collision.transform.tag == "LevelRestriction")
         {
-            Debug.Log("Hit the player.");
             Destroy(gameObject);
         }
     }
