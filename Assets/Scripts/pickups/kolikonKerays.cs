@@ -7,11 +7,15 @@ public class kolikonKerays : MonoBehaviour
 {
     public int kolikkoLaskenta;
     Text KolikotText;
+    Text GotACoinText;
+    int viimeKolikoidenMäärä;
 
-        void Start()
+        void Awake()
     {
         kolikkoLaskenta = 0;
         KolikotText = GameObject.Find("KolikotText").GetComponent<Text>();
+        GotACoinText = GameObject.Find("GotACoinText").GetComponent<Text>();
+        SetKolikotText();
     }
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
@@ -26,6 +30,14 @@ public class kolikonKerays : MonoBehaviour
     private void Update()
     {
         SetKolikotText();
+
+        if (kolikkoLaskenta > viimeKolikoidenMäärä)
+        {
+            GotACoinText.gameObject.SetActive(true);
+            GotACoinText.text = "Got A Coin!";
+        }
+
+        viimeKolikoidenMäärä = kolikkoLaskenta;
     }
 
     void SetKolikotText()

@@ -36,10 +36,10 @@ public class Raygun : MonoBehaviour
     }
     private void Update()
     {
-        //Debug.Log(aika);
+
         RaycastHit2D[] hits;
         Debug.DrawRay(barrelEnd.transform.position, transform.up);
-        hits = Physics2D.RaycastAll(barrelEnd.transform.position, transform.up, 10000); // Tunnistaa kaikki objektit  100 yksikön päähän tykin edessä
+        hits = Physics2D.RaycastAll(barrelEnd.transform.position, transform.up, 10000); // Tunnistaa kaikki objektit  10000 yksikön päähän tykin edessä
 
         float pituus = 10000;
         

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AmmusDestruction : MonoBehaviour {
 
+    public float destructionTime;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("ayy");

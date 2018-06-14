@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114222943022829432}
   - component: {fileID: 54190035563995314}
   - component: {fileID: 114398359057863240}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AnsaAmmus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45096cc7bd3b98f49b37179b4d4f7219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
+  moveSpeed: 50
 --- !u!114 &114398359057863240
 MonoBehaviour:
   m_ObjectHideFlags: 1

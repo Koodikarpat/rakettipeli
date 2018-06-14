@@ -19,6 +19,11 @@ public class PlayerHealthUI : MonoBehaviour {
         {
             GetComponent<Image>().enabled = false;
         }
+
+        if (HealthToDisplayAt == Player.GetComponent<PlayerHealth>().playerHealth)
+        {
+            GetComponent<Image>().enabled = true;
+        }
     }
 
 	void Update () {

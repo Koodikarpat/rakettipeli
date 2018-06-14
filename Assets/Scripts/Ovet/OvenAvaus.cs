@@ -28,6 +28,7 @@ public class OvenAvaus : MonoBehaviour {
 
                     m_Animator.SetTrigger("AvaaOvi");
                     saapuuVihreaOvelle = true;
+                    Debug.Log("avain on saapunut ovelle");
                 }
             }
             if (gameObject.name.Equals("kaksoisovetpuna"))

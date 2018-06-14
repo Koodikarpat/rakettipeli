@@ -7,42 +7,57 @@ public class casino : MonoBehaviour
     float numero = 3f;
     float voittoNumero = 2f;
     public GameObject palkinto;
-    public GameObject esineenPaikka;
     Animator animaatio;
     int kolikkoMaara;
     public int panos = 1;
+    public float syöttöNopeus;
+    GameObject pelaaja;
+    Vector2 suunta;
+    bool onkoPelattu;
 
     private void Start()
     {
         animaatio = GetComponent<Animator>();
+        onkoPelattu = false;
     }
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
     {
-        kolikkoMaara = mihinTormattiin.GetComponent<kolikonKerays>().kolikkoLaskenta;
-        numero = Random.Range(1, 5);
-        Debug.Log("Saavuit casinoon");
-        if (kolikkoMaara >= panos)
+        if (mihinTormattiin.CompareTag("Player") && !onkoPelattu)
         {
-            if (numero == voittoNumero)
-            {
-                animaatio.SetTrigger("Voitto");
-                Debug.Log("Voitto!");
-            }
-            else
-            {
-                animaatio.SetTrigger("Häviö");
-                Debug.Log("ei voittoa");
-            }
-        }
-        else
-        {
-            Debug.Log("ei peliä");
+            kolikkoMaara = mihinTormattiin.GetComponent<kolikonKerays>().kolikkoLaskenta;
+            numero = Random.Range(1, 5);
+            Debug.Log("Saavuit casinoon");
+                if (kolikkoMaara >= panos)
+                {
+                onkoPelattu = true;
+                    if (numero == voittoNumero)
+                    {
+                        animaatio.SetTrigger("Voitto");
+                        Debug.Log("Voitto!");
+                    }
+                    else
+                    {
+                        animaatio.SetTrigger("Häviö");
+                        Debug.Log("ei voittoa");
+                    }
+                }
+                else
+                {
+                    Debug.Log("ei peliä");
+                }
         }
     }
     public void AnnaPalkinto()
     {
-        Instantiate(palkinto, esineenPaikka.transform.transform.position, esineenPaikka.transform.rotation);
+        for (int i = 0; i < 20; i++)
+        {
+            pelaaja = GameObject.FindGameObjectWithTag("Player");
+            suunta = (pelaaja.transform.position - transform.position);
+            Rigidbody2D kolikkoInstance;
+            kolikkoInstance = Instantiate(palkinto.GetComponent<Rigidbody2D>(), transform.position, transform.rotation) as Rigidbody2D;
+            kolikkoInstance.AddForce(suunta * syöttöNopeus);
+        }
     }
     
 }

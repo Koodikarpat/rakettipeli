@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124826419998824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50.633896, y: 14.139573, z: 0}
+  m_LocalPosition: {x: -535, y: 180, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4407072597980114}
@@ -183,6 +183,7 @@ MonoBehaviour:
   onkoKuollut: 0
   MaxLoopTime: 0
   InvincibilityTime: 0
+  BossHasStarted: 0
 --- !u!114 &114794290260731892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,7 +212,7 @@ MonoBehaviour:
   barrelEnd: {fileID: 4516496267937934}
   lahtonopeus: 100
   fireRate: 2
-  range: 30
+  range: 100
 --- !u!212 &212166705004521730
 SpriteRenderer:
   m_ObjectHideFlags: 1
