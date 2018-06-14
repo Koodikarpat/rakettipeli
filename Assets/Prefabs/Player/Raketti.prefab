@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1166508668712498
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1255671997417332
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 114605839052144012}
   - component: {fileID: 82234057477813324}
   - component: {fileID: 81523372041217740}
+  - component: {fileID: 114072915839146404}
   m_Layer: 9
   m_Name: Raketti
   m_TagString: Player
@@ -156,7 +157,7 @@ Transform:
   m_GameObject: {fileID: 1166508668712498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: -1.69, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 4307970061480470}
   m_RootOrder: 4
@@ -615,6 +616,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114072915839146404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1970254931365704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23a2687b6bf80d45ae719312b3827ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onkoPelaajallaVihreaAvain: 0
+  onkoPelaajallaPunaAvain: 0
 --- !u!114 &114083756702865468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -759,6 +773,7 @@ MonoBehaviour:
   Level2Barrels:
   - {fileID: 1132174482141470}
   - {fileID: 1216089168113154}
+  Level4Barrels: []
 --- !u!114 &114992313467778846
 MonoBehaviour:
   m_ObjectHideFlags: 1
