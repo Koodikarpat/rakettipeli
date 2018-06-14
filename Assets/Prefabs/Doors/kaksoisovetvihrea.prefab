@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114847994295576336}
   m_Layer: 0
   m_Name: kaksoisovetvihrea
-  m_TagString: Door
+  m_TagString: LevelRestriction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
