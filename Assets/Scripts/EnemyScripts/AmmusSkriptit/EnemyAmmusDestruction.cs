@@ -6,7 +6,7 @@ public class EnemyAmmusDestruction : MonoBehaviour {
 
     void Start()
     {
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 10f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
