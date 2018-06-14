@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 61581580657751220}
   - component: {fileID: 114642959247787726}
   - component: {fileID: 114401329104652704}
+  - component: {fileID: 50914392633315840}
+  - component: {fileID: 114220739970076704}
   m_Layer: 11
   m_Name: Vihollisen ammus
   m_TagString: EnemyBullet
@@ -46,7 +48,7 @@ Transform:
 --- !u!50 &50914392633315840
 Rigidbody2D:
   serializedVersion: 4
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244327146412468}
@@ -90,7 +92,7 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!114 &114220739970076704
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244327146412468}
@@ -99,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c838a2cc8b91ea4795b68d66fd220d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammuksenNopeus: 10
 --- !u!114 &114401329104652704
 MonoBehaviour:
   m_ObjectHideFlags: 1
