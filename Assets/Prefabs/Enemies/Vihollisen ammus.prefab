@@ -20,13 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4557494788461500}
   - component: {fileID: 212571402755958550}
-  - component: {fileID: 114383226640764122}
-  - component: {fileID: 50996491089426080}
   - component: {fileID: 61581580657751220}
   - component: {fileID: 114642959247787726}
+  - component: {fileID: 114220739970076704}
+  - component: {fileID: 50914392633315840}
   m_Layer: 11
   m_Name: Vihollisen ammus
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!50 &50996491089426080
+--- !u!50 &50914392633315840
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -89,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.82}
   m_EdgeRadius: 0
---- !u!114 &114383226640764122
+--- !u!114 &114220739970076704
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -97,9 +97,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1244327146412468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c5ee96529393bd48a453c40ad794d56, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c838a2cc8b91ea4795b68d66fd220d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammuksenNopeus: 10
 --- !u!114 &114642959247787726
 MonoBehaviour:
   m_ObjectHideFlags: 1

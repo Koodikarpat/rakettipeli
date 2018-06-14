@@ -5,10 +5,9 @@ using UnityEngine;
 public class TurretShooting : MonoBehaviour
 {
 
-    public Rigidbody2D ammusPrefab;
+    public GameObject ammusPrefab;
     public Transform barrelEnd;
     private Vector2 suunta;
-    public int lahtonopeus;
     private float aika = 0;
     public float fireRate = 1;
     private GameObject targetPosition;
@@ -36,9 +35,8 @@ public class TurretShooting : MonoBehaviour
                 suunta = barrelEnd.transform.position - transform.position;
 
 
-                Rigidbody2D ampuminen;
-                ampuminen = Instantiate(ammusPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody2D;
-                ampuminen.AddForce(suunta * lahtonopeus);
+                
+                Instantiate(ammusPrefab, barrelEnd.position, barrelEnd.rotation);
                 aika = 0;
             }
         }

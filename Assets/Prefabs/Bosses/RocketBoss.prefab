@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 95206388721809234}
   - component: {fileID: 114398712982636708}
   m_Layer: 0
-  m_Name: RocketBoss
+  m_Name: RocketBoss 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,9 +396,9 @@ MonoBehaviour:
   BossHasStarted: 0
   CameraSizeInBossBattle: 15
   BossMusic: {fileID: 8300000, guid: bad8a5802da43cf49b42373e2de552d5, type: 3}
-  BossAppearance: {fileID: 95206388721809234}
+  BossAppearance: {fileID: 0}
   BossRestrictionHeight: 0
-  AnimationTrigger: TriggerAnimation
+  AnimationTrigger: 
 --- !u!114 &114398712982636708
 MonoBehaviour:
   m_ObjectHideFlags: 1
