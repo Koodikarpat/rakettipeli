@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114425927326449516}
   - component: {fileID: 114286703488995948}
   - component: {fileID: 114494385137913360}
+  - component: {fileID: 114032075149055286}
   m_Layer: 11
   m_Name: OGRocketBoss
   m_TagString: Enemy
@@ -120,7 +121,7 @@ Transform:
   m_GameObject: {fileID: 1300993065212374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 161.11845, y: -130.75461, z: -0.36369824}
-  m_LocalScale: {x: 1.9301668, y: 1.9301677, z: 1.9301677}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4515341924694508}
   - {fileID: 4030491320983178}
@@ -294,6 +295,27 @@ PolygonCollider2D:
       - {x: 0.71999997, y: -2.83}
       - {x: 0.75, y: -2.76}
       - {x: 0.79999995, y: -2.6299999}
+--- !u!114 &114032075149055286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300993065212374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cdd67cc53c4184f9b1a44257fa1b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageTwoHealth: 9
+  StageTwoEnemySpawnPoints:
+  - {fileID: 4520865697020496, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
+  - {fileID: 4616527770280396, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
+  - {fileID: 4753001157949180, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
+  - {fileID: 4128387332788458, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
+  StageTwoEnemy: {fileID: 1196183094850896, guid: f8c2374449afa634da64d17063bd596a,
+    type: 2}
+  VictoryScreen: {fileID: 1031210480001592, guid: d0883340d4507d646987c50daac31dd1,
+    type: 2}
 --- !u!114 &114041744612623746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -308,8 +330,8 @@ MonoBehaviour:
   missilePrefab: {fileID: 50464063306342482, guid: f2e6c5f5623d5354296f645544e185f7,
     type: 2}
   barrelEnd: {fileID: 4402620060028536}
-  fireRate: 0.2
-  range: 35
+  fireRate: 0.5
+  range: 50
 --- !u!114 &114069994189741806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 1.2
+  nopeus: 1
 --- !u!114 &114242564104978134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,8 +358,8 @@ MonoBehaviour:
   missilePrefab: {fileID: 50464063306342482, guid: f2e6c5f5623d5354296f645544e185f7,
     type: 2}
   barrelEnd: {fileID: 4390137745567316}
-  fireRate: 0.2
-  range: 35
+  fireRate: 0.5
+  range: 50
 --- !u!114 &114286703488995948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -349,6 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 1
+  VictoryScreen: {fileID: 1031210480001592, guid: d0883340d4507d646987c50daac31dd1,
+    type: 2}
 --- !u!114 &114425927326449516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,6 +399,7 @@ MonoBehaviour:
   BossHealthBarCanvas: {fileID: 1870969809152284, guid: 745268352a4030d4eb8b0ac0741967a6,
     type: 2}
   InstantiatedHealthBarCanvas: {fileID: 0}
+  Text: PlayerController.cs
 --- !u!114 &114513887204578598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -385,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthPoints: 30
+  HealthPoints: 10
   ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
     type: 2}
   onkoKuollut: 0
@@ -403,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 1.2
+  nopeus: 1
 --- !u!212 &212194435719976470
 SpriteRenderer:
   m_ObjectHideFlags: 1

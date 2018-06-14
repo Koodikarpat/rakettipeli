@@ -255,7 +255,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023723602, y: 18.23219}
+  m_Offset: {x: 0.023723602, y: 1059.497}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.49168226, y: 0.5118025}
@@ -266,7 +266,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.12540817, y: 30.257637}
+  m_Size: {x: 0.12540817, y: 2112.7869}
   m_EdgeRadius: 0
 --- !u!114 &114046170225512464
 MonoBehaviour:
@@ -335,6 +335,7 @@ MonoBehaviour:
   onkoKuollut: 0
   MaxLoopTime: 0
   InvincibilityTime: 0
+  BossHasStarted: 0
 --- !u!212 &212204294125042116
 SpriteRenderer:
   m_ObjectHideFlags: 1

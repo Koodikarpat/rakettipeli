@@ -11,6 +11,7 @@ public class Raygun : MonoBehaviour
     public GameObject ammus;
     public GameObject barrelEnd;
     public GameObject tähtäin;
+    public float Tähtäysaika;
     
     
 
@@ -35,7 +36,7 @@ public class Raygun : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(aika);
+        //Debug.Log(aika);
         RaycastHit2D[] hits;
         Debug.DrawRay(barrelEnd.transform.position, transform.up);
         hits = Physics2D.RaycastAll(barrelEnd.transform.position, transform.up, 10000); // Tunnistaa kaikki objektit  100 yksikön päähän tykin edessä
@@ -65,7 +66,7 @@ public class Raygun : MonoBehaviour
             
             
             
-            if (aika > 1)
+            if (aika > Tähtäysaika)
             {
                 tähtäin.SetActive(true);
             }

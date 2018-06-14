@@ -11,14 +11,18 @@ public class BossActivate : MonoBehaviour {
     public bool BossHasStarted;
     public float CameraSizeInBossBattle;
     public AudioClip BossMusic;
-    private GameObject InstantiatedBoss;
+    public GameObject InstantiatedBoss;
     public Animator BossAppearance;
     public float BossRestrictionHeight;
     public string AnimationTrigger;
+    public string BossName;
+   
 
     private void Start()
     {
         BossRestriction.transform.localScale = new Vector3(1f, 0f, 1f);
+        //transform.parent.transform.Find("avaruus").GetComponent<SpriteRenderer>().enabled = false;
+        
     }
 
     
@@ -27,7 +31,6 @@ public class BossActivate : MonoBehaviour {
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         Player.GetComponent<PlayerMovement>().enabled = false;
-        Player.GetComponentInChildren<AmmusInstantiate>().enabled = false;
         Camera = GameObject.FindGameObjectWithTag("MainCamera");
         Camera.GetComponent<CameraController>().enabled = false;
         yield return new WaitForSeconds(0.5f);
@@ -43,7 +46,10 @@ public class BossActivate : MonoBehaviour {
         Camera.GetComponent<CameraController>().enabled = true;
         Camera.GetComponent<Camera>().orthographicSize = CameraSizeInBossBattle;
         Player.GetComponent<PlayerMovement>().enabled = true;
-        Player.GetComponentInChildren<AmmusInstantiate>().enabled = true;
+        foreach (AmmusInstantiate item in GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<AmmusInstantiate>())
+        {
+            item.enabled = true;
+        }
         Player.GetComponent<AudioSource>().clip = BossMusic;
         Player.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1);
@@ -55,13 +61,18 @@ public class BossActivate : MonoBehaviour {
 
     public void OnAnimationEnd()
     {
-        Camera.SetActive(true);
+        foreach (AmmusInstantiate item in GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<AmmusInstantiate>())
+        {
+            item.enabled = true;
+        }
+        Camera.transform.parent.transform.Find("avaruus").gameObject.SetActive(true);
         Camera.GetComponent<Camera>().orthographicSize = CameraSizeInBossBattle;
         Player.GetComponent<PlayerMovement>().enabled = true;
         Player.GetComponentInChildren<AmmusInstantiate>().enabled = true;
         Player.GetComponent<AudioSource>().clip = BossMusic;
         Player.GetComponent<AudioSource>().Play();
         InstantiatedBoss = Instantiate(Boss, BossLocation.transform.position, Quaternion.identity);
+        InstantiatedBoss.GetComponent<BossHealthBar>().Text = BossName;
         InstantiatedBoss.GetComponent<EnemyHealth>().BossHasStarted = true;
         print(InstantiatedBoss.GetComponent<EnemyHealth>().BossHasStarted);
     }
@@ -77,6 +88,10 @@ public class BossActivate : MonoBehaviour {
 
             else
             {
+                foreach (AmmusInstantiate item in GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<AmmusInstantiate>())
+                {
+                    item.enabled = false;
+                }
                 Player = GameObject.FindGameObjectWithTag("Player");
                 Player.GetComponent<PlayerMovement>().enabled = false;
                 Player.GetComponentInChildren<AmmusInstantiate>().enabled = false;

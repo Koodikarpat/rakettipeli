@@ -8,6 +8,12 @@ public class BossHealthBar : MonoBehaviour {
     public GameObject BossHealthBarCanvas;
     private bool HasBeenActivated;
     public GameObject InstantiatedHealthBarCanvas;
+    public string Text;
+
+    private void Start()
+    {
+    }
+
 
     private void Update()
     {
@@ -19,6 +25,8 @@ public class BossHealthBar : MonoBehaviour {
                 InstantiatedHealthBarCanvas = Instantiate(BossHealthBarCanvas, new Vector3(0, 0, 0), Quaternion.identity);
                 InstantiatedHealthBarCanvas.transform.Find("HealthSlider").GetComponent<Slider>().maxValue = GetComponent<EnemyHealth>().HealthPoints;
                 InstantiatedHealthBarCanvas.transform.Find("HealthSlider").GetComponent<Slider>().value = GetComponent<EnemyHealth>().HealthPoints;
+                InstantiatedHealthBarCanvas.transform.Find("Text").GetComponent<Text>().text = Text;
+                print(Text);
                 HasBeenActivated = true;
                 return;
             }

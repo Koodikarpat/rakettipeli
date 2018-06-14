@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RocketBossStart : MonoBehaviour {
+public class RocketBossStart : MonoBehaviour
+{
 
     private bool HasBeenActivated;
 
@@ -15,8 +16,9 @@ public class RocketBossStart : MonoBehaviour {
             child.gameObject.SetActive(false);
         }
     }
-    // Update is called once per frame
-    void Update () {
+    // Update is called once per frame 
+    void Update()
+    {
         if (HasBeenActivated == false)
         {
             if (GetComponent<EnemyHealth>().BossHasStarted == true)
@@ -28,12 +30,11 @@ public class RocketBossStart : MonoBehaviour {
                 }
                 GameObject.FindGameObjectWithTag("BossActivation").SetActive(false);
                 HasBeenActivated = true;
-                }
             }
+        }
         if (GetComponent<EnemyHealth>().HealthPoints <= 0)
         {
 
         }
     }
 }
-
