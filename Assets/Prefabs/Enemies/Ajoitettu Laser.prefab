@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4011646864171842}
   - component: {fileID: 114901969433027858}
-  - component: {fileID: 114399250530368938}
   m_Layer: 0
   m_Name: Ajoitettu Laser
   m_TagString: Untagged
@@ -53,6 +52,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4481983096350332}
   - component: {fileID: 212643983424697680}
+  - component: {fileID: 61747624752401570}
+  - component: {fileID: 114754575146799388}
   m_Layer: 0
   m_Name: RaygunAmmus
   m_TagString: Untagged
@@ -66,7 +67,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066480739121026}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -298.01, y: 75.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -101,12 +102,37 @@ Transform:
   m_Father: {fileID: 4011646864171842}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114399250530368938
+--- !u!61 &61747624752401570
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621685415070142}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.70080566, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &114754575146799388
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066480739121026}
+  m_GameObject: {fileID: 1621685415070142}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
@@ -127,7 +153,7 @@ MonoBehaviour:
   ammus: {fileID: 1621685415070142}
   "t\xE4ht\xE4in": {fileID: 1216275853917504}
   kesto: 5
-  aloitusAika: 0
+  aloitusAika: 8
   cooldown: 6
 --- !u!212 &212559624076357334
 SpriteRenderer:
