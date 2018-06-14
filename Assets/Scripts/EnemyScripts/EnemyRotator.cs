@@ -6,6 +6,7 @@ public class EnemyRotator : MonoBehaviour {
 
     private GameObject targetPosition;
     private Transform Position;
+    public float Matka = 10.0f;
     Vector2 suunta;
     float kulma;
     public float nopeus = 1;
@@ -30,6 +31,8 @@ public class EnemyRotator : MonoBehaviour {
         }
        
 
+        
+        
     }
 
 }
