@@ -13,6 +13,15 @@ public class PlayerMovement : MonoBehaviour {
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("z"))
+        {
+            combatMode = !combatMode;
+        }
+    }
+
     void FixedUpdate () {
         if (combatMode == false)
         {
@@ -50,18 +59,6 @@ public class PlayerMovement : MonoBehaviour {
 
 
         }
-        if (Input.GetKeyDown("z"))
-        {
-            combatMode = !combatMode;
-            if (combatMode == true)
-            {
-                gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
-            }
 
-            if (combatMode == false)
-            {
-                gameObject.GetComponent<Rigidbody2D>().freezeRotation = false;
-            }
-        }
     }
 }
