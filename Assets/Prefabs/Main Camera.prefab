@@ -151,6 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraDistance: 1
   CameraSizeAtStart: 15
+  cameraPosition: 6
+  smoothing: 0.05
 --- !u!114 &114946834997881272
 MonoBehaviour:
   m_ObjectHideFlags: 1
