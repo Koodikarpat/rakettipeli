@@ -26,11 +26,11 @@ public class sirkkeliliikkuminen : MonoBehaviour
         Aika = Aika + Time.deltaTime;
         if (Aika < matka)
         {
-            transform.position += ykkösvektori * nopee;
+            transform.position += ykkösvektori * nopee * Time.deltaTime;
         }
         else
             {
-            transform.position += -ykkösvektori * nopee;
+            transform.position += -ykkösvektori * nopee * Time.deltaTime;
             }
         if (Aika > matka * 2)
         {
