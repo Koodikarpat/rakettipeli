@@ -152,6 +152,76 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114411431814876224, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954661709853788, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114392548972551218, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114039760756684236, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114430175667592496, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114798575657423014, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078518372632862, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114277218126840264, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114620126638202460, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306879484169046, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114212866417446002, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114910440643531762, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114348482355429432, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418204215486608, guid: e9209126bdd128e4e91c5a7fc79359d2,
+        type: 2}
+      propertyPath: asteroidSpeed
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9209126bdd128e4e91c5a7fc79359d2, type: 2}
   m_IsPrefabParent: 0
