@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController2 : MonoBehaviour {
+public class EnemyController2 : MonoBehaviour
+{
 
     GameObject targetPosition;
     public Transform Player;
@@ -19,7 +20,8 @@ public class EnemyController2 : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         if (targetPosition != null)
         {
@@ -35,10 +37,10 @@ public class EnemyController2 : MonoBehaviour {
 
         Range = Vector2.Distance(transform.position, Player.position);
 
-        if (Range > Distance) {
+        if (Range > Distance)
+        {
             transform.position = Vector2.MoveTowards(transform.position, Player.position, Speed * Time.deltaTime);
         }
-
     }
 
     void OnTriggerEnter2D(Collider2D Tormays)
@@ -48,4 +50,5 @@ public class EnemyController2 : MonoBehaviour {
             gameObject.SetActive(false);
         }
     }
+
 }

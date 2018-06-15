@@ -277,6 +277,11 @@ Prefab:
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114977394128176484, guid: 26cc6942f19f45e4aab7f26a8e0a1114,
+        type: 2}
+      propertyPath: Enemy
+      value: 
+      objectReference: {fileID: 2004887545}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26cc6942f19f45e4aab7f26a8e0a1114, type: 2}
   m_IsPrefabParent: 0
@@ -311,6 +316,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VihollisenAmmusPrefab: {fileID: 1221034782137240, guid: 535e9c7376c656c43af401d31b7f698e,
     type: 2}
+--- !u!1 &1349177726 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1166508668712498, guid: b5c20124bc158984b96625d4efd9b2f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1858888499}
 --- !u!1001 &1858888499
 Prefab:
   m_ObjectHideFlags: 0
@@ -454,6 +464,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1477694081080094, guid: 26cc6942f19f45e4aab7f26a8e0a1114,
     type: 2}
   m_PrefabInternal: {fileID: 422835156}
+--- !u!4 &2004887545 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4293913264173798, guid: 26cc6942f19f45e4aab7f26a8e0a1114,
+    type: 2}
+  m_PrefabInternal: {fileID: 422835156}
 --- !u!114 &2004887546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,9 +481,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPoints: 1
-  ExplosionParticle: {fileID: 0}
+  ExplosionParticle: {fileID: 1349177726}
   onkoKuollut: 0
-  MaxLoopTime: 1
+  MaxLoopTime: 5
   InvincibilityTime: 1
   BossHasStarted: 0
 --- !u!114 &2004887547
