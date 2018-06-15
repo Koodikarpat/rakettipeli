@@ -7,7 +7,6 @@ public class TuhoaKuollut : MonoBehaviour {
     EnemyHealth enemyHealth;
     bool onkoKuollut;
     public bool IsBoss;
-    public GameObject VictoryScreen;
 
     void Start()
     {
