@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthPoints: 60
+  HealthPoints: 100
   ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
     type: 2}
   onkoKuollut: 0
@@ -441,12 +441,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e545ead3fb7df5844b537624153ac2bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage2Health: 30
+  Stage2Health: 50
   StageTwoEnemyLocations:
   - {fileID: 4413701021632186, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
   - {fileID: 4793141858097856, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
   - {fileID: 4181338679912176, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
   - {fileID: 4801722159854200, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
+  - {fileID: 4887532743443940, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
+  - {fileID: 4418548351930564, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
   StageTwoEnemy: {fileID: 1196183094850896, guid: f8c2374449afa634da64d17063bd596a,
     type: 2}
   Explosion: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb, type: 2}

@@ -103,6 +103,7 @@ public class RocketBossStages : MonoBehaviour {
         }
         Instantiate(Explosion, gameObject.transform.position, Quaternion.identity);
         Player.GetComponent<PlayerMovement>().enabled = false;
+        Player.GetComponent<AudioSource>().Stop();
         foreach (AmmusInstantiate item in GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<AmmusInstantiate>())
         {
             item.enabled = false;

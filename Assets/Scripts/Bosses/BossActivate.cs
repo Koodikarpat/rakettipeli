@@ -97,7 +97,11 @@ public class BossActivate : MonoBehaviour {
                 Player = GameObject.FindGameObjectWithTag("Player");
                 Player.GetComponent<PlayerMovement>().enabled = false;
                 Player.GetComponentInChildren<AmmusInstantiate>().enabled = false;
-                
+                foreach (GameObject item in GameObject.FindGameObjectsWithTag("EnemyBullet"))
+                {
+                    Destroy(item);
+                }
+
                 Camera = GameObject.FindGameObjectWithTag("MainCamera");
                 //Camera.SetActive(false);
                 BossAppearance.SetTrigger(AnimationTrigger);
