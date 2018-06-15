@@ -20,6 +20,7 @@ public class piikitLiikkumaan : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
     {
+        if (mihinTormattiin.CompareTag("Player"))
         for (int i = 0; i < piikit.Length; i++)
         {
             piikit[i].GetComponent<piikki>().pitaakoLiikkua = true;
