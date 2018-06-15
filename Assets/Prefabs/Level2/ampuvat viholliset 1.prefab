@@ -37,6 +37,9 @@ GameObject:
   - component: {fileID: 212273561441678398}
   - component: {fileID: 114248221168735756}
   - component: {fileID: 95627257055879358}
+  - component: {fileID: 61480252984279952}
+  - component: {fileID: 114367360865326352}
+  - component: {fileID: 114310916660099418}
   m_Layer: 0
   m_Name: vihollinen
   m_TagString: Untagged
@@ -55,6 +58,9 @@ GameObject:
   - component: {fileID: 212494189110410240}
   - component: {fileID: 114676901620280964}
   - component: {fileID: 95492842473819218}
+  - component: {fileID: 61633447955059906}
+  - component: {fileID: 114880474404471682}
+  - component: {fileID: 114896503075979212}
   m_Layer: 0
   m_Name: vihollinen
   m_TagString: Untagged
@@ -133,6 +139,9 @@ GameObject:
   - component: {fileID: 212836356278242934}
   - component: {fileID: 114688567149310558}
   - component: {fileID: 95397375662891182}
+  - component: {fileID: 61028872916630730}
+  - component: {fileID: 114591089761285728}
+  - component: {fileID: 114476549755840138}
   m_Layer: 0
   m_Name: vihollinen
   m_TagString: Untagged
@@ -151,6 +160,9 @@ GameObject:
   - component: {fileID: 212986521383875986}
   - component: {fileID: 114022964228461176}
   - component: {fileID: 95490765692358144}
+  - component: {fileID: 61488625474244830}
+  - component: {fileID: 114388694047015622}
+  - component: {fileID: 114774288070675866}
   m_Layer: 0
   m_Name: vihollinen
   m_TagString: Untagged
@@ -399,6 +411,106 @@ Transform:
   m_Father: {fileID: 4791068215849798}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!61 &61028872916630730
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637744971883192}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.3333335, y: 4}
+    newSize: {x: 1.05, y: 1.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.05, y: 1.01}
+  m_EdgeRadius: 0
+--- !u!61 &61480252984279952
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108008745065288}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.3333335, y: 4}
+    newSize: {x: 1.05, y: 1.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.05, y: 1.01}
+  m_EdgeRadius: 0
+--- !u!61 &61488625474244830
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759594422704928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.3333335, y: 4}
+    newSize: {x: 1.05, y: 1.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.05, y: 1.01}
+  m_EdgeRadius: 0
+--- !u!61 &61633447955059906
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215460845068342}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.3333335, y: 4}
+    newSize: {x: 1.05, y: 1.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.05, y: 1.01}
+  m_EdgeRadius: 0
 --- !u!95 &95397375662891182
 Animator:
   serializedVersion: 3
@@ -497,6 +609,86 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammus: {fileID: 1244327146412468, guid: 96583ed974edc74439e0292ab88a477a, type: 2}
   ammusLahtee: {fileID: 4113308598291242}
+--- !u!114 &114310916660099418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108008745065288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
+--- !u!114 &114367360865326352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108008745065288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 5
+  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
+    type: 2}
+  onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
+  BossHasStarted: 0
+--- !u!114 &114388694047015622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759594422704928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 5
+  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
+    type: 2}
+  onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
+  BossHasStarted: 0
+--- !u!114 &114476549755840138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637744971883192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
+--- !u!114 &114591089761285728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637744971883192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 5
+  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
+    type: 2}
+  onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
+  BossHasStarted: 0
 --- !u!114 &114676901620280964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -523,6 +715,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammus: {fileID: 1244327146412468, guid: 96583ed974edc74439e0292ab88a477a, type: 2}
   ammusLahtee: {fileID: 4820533816585234}
+--- !u!114 &114774288070675866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759594422704928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
+--- !u!114 &114880474404471682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215460845068342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 5
+  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
+    type: 2}
+  onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
+  BossHasStarted: 0
+--- !u!114 &114896503075979212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215460845068342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!212 &212273561441678398
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -558,7 +794,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 995dd57c37e15824d93510b4c924b3ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2822a0567da2e264bbcf4716cc58cc1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -603,7 +839,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 995dd57c37e15824d93510b4c924b3ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2822a0567da2e264bbcf4716cc58cc1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -648,7 +884,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 995dd57c37e15824d93510b4c924b3ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2822a0567da2e264bbcf4716cc58cc1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -693,7 +929,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 995dd57c37e15824d93510b4c924b3ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2822a0567da2e264bbcf4716cc58cc1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
