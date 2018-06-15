@@ -2861,6 +2861,7 @@ MonoBehaviour:
   ammus: {fileID: 1765319571482420}
   barrelEnd: {fileID: 1407235527542890}
   "t\xE4ht\xE4in": {fileID: 1811170549973410}
+  "T\xE4ht\xE4ysaika": 0
 --- !u!114 &114104387911177680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2872,6 +2873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114107760242276064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2917,6 +2920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114151539547186516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2928,6 +2933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114176597107606562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2939,6 +2946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114191640031660458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3061,6 +3070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114289517858750396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3094,6 +3105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114373634816777602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3134,6 +3147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114413394393810394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3157,6 +3172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114422683287413282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3186,6 +3203,7 @@ MonoBehaviour:
   ammus: {fileID: 1539115181138666}
   barrelEnd: {fileID: 1640565694100792}
   "t\xE4ht\xE4in": {fileID: 1078673919227334}
+  "T\xE4ht\xE4ysaika": 0
 --- !u!114 &114449111698987468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3244,6 +3262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114542014768617544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3273,6 +3293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114552741819924140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3297,6 +3319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114582070751551184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3308,6 +3332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114590669786177146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3319,6 +3345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114616499428085098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3384,6 +3412,7 @@ MonoBehaviour:
   ammus: {fileID: 1076258875662948}
   barrelEnd: {fileID: 1526540993217122}
   "t\xE4ht\xE4in": {fileID: 1559380526364810}
+  "T\xE4ht\xE4ysaika": 0
 --- !u!114 &114706348483506022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3425,6 +3454,7 @@ MonoBehaviour:
   ammus: {fileID: 1717571958921286}
   barrelEnd: {fileID: 1496221784921088}
   "t\xE4ht\xE4in": {fileID: 1635837923011610}
+  "T\xE4ht\xE4ysaika": 0
 --- !u!114 &114736292677804274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3436,6 +3466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114754813396239410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3517,6 +3549,7 @@ MonoBehaviour:
   ammus: {fileID: 1208639959366832}
   barrelEnd: {fileID: 1926255312817258}
   "t\xE4ht\xE4in": {fileID: 1999264321649328}
+  "T\xE4ht\xE4ysaika": 0
 --- !u!114 &114909047116473282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3533,6 +3566,7 @@ MonoBehaviour:
   ammus: {fileID: 1948540731682144}
   barrelEnd: {fileID: 1398022985170000}
   "t\xE4ht\xE4in": {fileID: 1377307305327810}
+  "T\xE4ht\xE4ysaika": 0
 --- !u!114 &114915616378490590
 MonoBehaviour:
   m_ObjectHideFlags: 1
