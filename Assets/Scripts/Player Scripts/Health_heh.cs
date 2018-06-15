@@ -19,6 +19,7 @@ public class Health_heh : MonoBehaviour {
     {
         if (huhuu.enabled==true)
         {
+
             m_time += Time.deltaTime;
 
             if (m_time >= odotusAika)
@@ -26,6 +27,9 @@ public class Health_heh : MonoBehaviour {
                 m_time = 0.0f;
 
                 huhuu.enabled = false;
+                int x = Random.Range(50, 700);
+                int y = Random.Range(50, 250);
+                transform.position = new Vector3(x, y, 0);
             }
         }
 
