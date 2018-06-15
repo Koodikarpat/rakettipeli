@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 114279767288506716}
   - component: {fileID: 114710575196969054}
   m_Layer: 0
-  m_Name: avainkorttivihrea (1)
+  m_Name: avainkorttivihrea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

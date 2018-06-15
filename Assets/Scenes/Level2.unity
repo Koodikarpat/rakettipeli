@@ -276,11 +276,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4307970061480470, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -540.7
+      value: -535.3
       objectReference: {fileID: 0}
     - target: {fileID: 4307970061480470, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 55.3
+      value: 55.8
       objectReference: {fileID: 0}
     - target: {fileID: 4307970061480470, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -306,20 +306,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 60842637285613322, guid: b5c20124bc158984b96625d4efd9b2f1,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1970254931365704, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 82234057477813324, guid: b5c20124bc158984b96625d4efd9b2f1,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6b235cfe02410624a815fc0f431d678b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
   m_IsPrefabParent: 0
@@ -383,7 +369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBoss: 0
-  VictoryScreen: {fileID: 0}
 --- !u!1001 &203565319
 Prefab:
   m_ObjectHideFlags: 0
@@ -535,6 +520,10 @@ Prefab:
     - target: {fileID: 4311870558236400, guid: a51df87d6a881d84ab247fa0ea5b8f10, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759735829986770, guid: a51df87d6a881d84ab247fa0ea5b8f10, type: 2}
+      propertyPath: m_Name
+      value: kaksoisovetvihrea
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a51df87d6a881d84ab247fa0ea5b8f10, type: 2}
