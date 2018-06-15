@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 114886461720201624}
   - component: {fileID: 114051209062554758}
   m_Layer: 0
-  m_Name: raketti3
+  m_Name: raketti3VIholliset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
