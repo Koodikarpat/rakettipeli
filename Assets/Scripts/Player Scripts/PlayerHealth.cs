@@ -21,13 +21,8 @@ public class PlayerHealth : MonoBehaviour {
     {
         if(playerHealth > viimePlayerHealth)
         {
-//<<<<<<< Updated upstream
             healthUpText.gameObject.SetActive(true);
             healthUpText.text = ("Health Up!");
-//=======
-            playerHealth++;
-//           Destroy(collision.gameObject);
-//>>>>>>> Stashed changes
         }
 
         viimePlayerHealth = playerHealth;

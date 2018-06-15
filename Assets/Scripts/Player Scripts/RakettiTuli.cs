@@ -14,7 +14,8 @@ public class RakettiTuli : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         pmScript = GetComponent<PlayerMovement>();
-	}
+        Debug.Log("Huhuu");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,10 +23,8 @@ public class RakettiTuli : MonoBehaviour {
         if (pmScript.combatMode == false)
         {
             speed = GetComponent<Rigidbody2D>().velocity.magnitude;
-            
 
             pituus = speed * pittusKerroin;
-
             tuli.transform.localScale = new Vector3(pituus*satunnaisuus, pituus*satunnaisuus, 1);
         }
         else
