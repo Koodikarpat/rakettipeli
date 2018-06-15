@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114261867060915052
 MonoBehaviour:
@@ -115,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5ee96529393bd48a453c40ad794d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Lifetime: 10
 --- !u!212 &212944918407413640
 SpriteRenderer:
   m_ObjectHideFlags: 1

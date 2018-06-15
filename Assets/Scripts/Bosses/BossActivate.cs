@@ -30,6 +30,7 @@ public class BossActivate : MonoBehaviour {
     IEnumerator ActivateBoss()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        Player.GetComponent<AudioSource>().Stop();
         Player.GetComponent<PlayerMovement>().enabled = false;
         Camera = GameObject.FindGameObjectWithTag("MainCamera");
         Camera.GetComponent<CameraController>().enabled = false;
@@ -75,6 +76,7 @@ public class BossActivate : MonoBehaviour {
         InstantiatedBoss.GetComponent<BossHealthBar>().Text = BossName;
         InstantiatedBoss.GetComponent<EnemyHealth>().BossHasStarted = true;
         print(InstantiatedBoss.GetComponent<EnemyHealth>().BossHasStarted);
+        gameObject.GetComponent<Collider2D>().enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

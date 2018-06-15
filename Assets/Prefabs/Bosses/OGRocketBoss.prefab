@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114425927326449516}
   - component: {fileID: 114286703488995948}
   - component: {fileID: 114494385137913360}
-  - component: {fileID: 114032075149055286}
+  - component: {fileID: 114829571625269056}
   m_Layer: 11
   m_Name: OGRocketBoss
   m_TagString: Enemy
@@ -295,27 +295,6 @@ PolygonCollider2D:
       - {x: 0.71999997, y: -2.83}
       - {x: 0.75, y: -2.76}
       - {x: 0.79999995, y: -2.6299999}
---- !u!114 &114032075149055286
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300993065212374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86cdd67cc53c4184f9b1a44257fa1b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StageTwoHealth: 9
-  StageTwoEnemySpawnPoints:
-  - {fileID: 4520865697020496, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
-  - {fileID: 4616527770280396, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
-  - {fileID: 4753001157949180, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
-  - {fileID: 4128387332788458, guid: e925b4bf7f01f5a45ba86b4ee2aa6214, type: 2}
-  StageTwoEnemy: {fileID: 1196183094850896, guid: f8c2374449afa634da64d17063bd596a,
-    type: 2}
-  VictoryScreen: {fileID: 1031210480001592, guid: d0883340d4507d646987c50daac31dd1,
-    type: 2}
 --- !u!114 &114041744612623746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -343,6 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114242564104978134
 MonoBehaviour:
@@ -372,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBoss: 1
-  VictoryScreen: {fileID: 1031210480001592, guid: d0883340d4507d646987c50daac31dd1,
+  VictoryScreen: {fileID: 1031210480001592, guid: d94060a2fa86eb147b5f78a01b6ea952,
     type: 2}
 --- !u!114 &114425927326449516
 MonoBehaviour:
@@ -429,7 +409,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
+--- !u!114 &114829571625269056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300993065212374}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e545ead3fb7df5844b537624153ac2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage2Health: 28
+  StageTwoEnemyLocations:
+  - {fileID: 4413701021632186, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
+  - {fileID: 4793141858097856, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
+  - {fileID: 4181338679912176, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
+  - {fileID: 4801722159854200, guid: 1f9f80816db6e294c9b635f31b5523c1, type: 2}
+  StageTwoEnemy: {fileID: 1196183094850896, guid: f8c2374449afa634da64d17063bd596a,
+    type: 2}
 --- !u!212 &212194435719976470
 SpriteRenderer:
   m_ObjectHideFlags: 1

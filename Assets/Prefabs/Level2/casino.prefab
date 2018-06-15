@@ -9,20 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000743883415524}
+  m_RootGameObject: {fileID: 1295406840873640}
   m_IsPrefabParent: 1
---- !u!1 &1000743883415524
+--- !u!1 &1295406840873640
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4360814310045852}
-  - component: {fileID: 212179246946119022}
-  - component: {fileID: 61214199697518006}
-  - component: {fileID: 114841411238425022}
-  - component: {fileID: 95409875527262782}
+  - component: {fileID: 4161203588663352}
+  - component: {fileID: 61977124891694190}
+  - component: {fileID: 114465275404603092}
+  - component: {fileID: 95263411895624258}
   m_Layer: 0
   m_Name: casino
   m_TagString: Untagged
@@ -30,31 +29,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1009247559628566
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4718694952325502}
-  - component: {fileID: 212435871432769852}
-  m_Layer: 0
-  m_Name: "casinon py\xF6r\xE4n viisari 1"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1746791633250108
+--- !u!1 &1436510774178218
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4493368730595616}
-  - component: {fileID: 212934006447897266}
+  - component: {fileID: 4970401759096426}
+  - component: {fileID: 212964997566856768}
+  - component: {fileID: 58567140759681142}
+  - component: {fileID: 114620308474952174}
   m_Layer: 0
   m_Name: "casinon py\xF6r\xE4"
   m_TagString: Untagged
@@ -62,53 +47,84 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4360814310045852
+--- !u!1 &1813460396190504
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4700646646126116}
+  - component: {fileID: 212743574961195030}
+  m_Layer: 0
+  m_Name: "casinon py\xF6r\xE4n viisari 1"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4161203588663352
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000743883415524}
+  m_GameObject: {fileID: 1295406840873640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -364.7, y: 80.2, z: 0}
+  m_LocalPosition: {x: -367.74, y: 81.11, z: 0}
   m_LocalScale: {x: 4.185749, y: 3.848049, z: 1}
   m_Children:
-  - {fileID: 4493368730595616}
+  - {fileID: 4970401759096426}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4493368730595616
+--- !u!4 &4700646646126116
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1746791633250108}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.001, y: -0.243, z: 0}
-  m_LocalScale: {x: 0.7135467, y: 0.8005509, z: 1}
-  m_Children:
-  - {fileID: 4718694952325502}
-  m_Father: {fileID: 4360814310045852}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4718694952325502
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009247559628566}
+  m_GameObject: {fileID: 1813460396190504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.035, y: -0.03, z: 0}
-  m_LocalScale: {x: 0.5185936, y: 0.42494065, z: 1}
+  m_LocalPosition: {x: 0.05, y: -0.01, z: 0}
+  m_LocalScale: {x: 0.7248276, y: 0.61987644, z: 1}
   m_Children: []
-  m_Father: {fileID: 4493368730595616}
+  m_Father: {fileID: 4970401759096426}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61214199697518006
+--- !u!4 &4970401759096426
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436510774178218}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0026966345, w: 0.99999636}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.17282622, y: 0.186263, z: 1}
+  m_Children:
+  - {fileID: 4700646646126116}
+  m_Father: {fileID: 4161203588663352}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.30900002}
+--- !u!58 &58567140759681142
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436510774178218}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 7
+--- !u!61 &61977124891694190
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000743883415524}
+  m_GameObject: {fileID: 1295406840873640}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -128,13 +144,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.43, y: 1.09}
   m_EdgeRadius: 0
---- !u!95 &95409875527262782
+--- !u!95 &95263411895624258
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000743883415524}
+  m_GameObject: {fileID: 1295406840873640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: aa0d09dda2e52da4db96ab489ad3674a, type: 2}
@@ -146,12 +162,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114841411238425022
+--- !u!114 &114465275404603092
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000743883415524}
+  m_GameObject: {fileID: 1295406840873640}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e9687e9450a79449ac15199c245410f, type: 3}
@@ -160,57 +176,26 @@ MonoBehaviour:
   palkinto: {fileID: 1786699077750102, guid: a225cf6d2aca16d48988aaba557d8d6d, type: 2}
   panos: 10
   "sy\xF6tt\xF6Nopeus": 40
---- !u!212 &212179246946119022
-SpriteRenderer:
+--- !u!114 &114620308474952174
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000743883415524}
+  m_GameObject: {fileID: 1436510774178218}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cecdc3937ffe8d94b875dd4667713334, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.43, y: 1.09}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!212 &212435871432769852
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9687e9450a79449ac15199c245410f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palkinto: {fileID: 0}
+  panos: 1
+  "sy\xF6tt\xF6Nopeus": 0
+--- !u!212 &212743574961195030
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009247559628566}
+  m_GameObject: {fileID: 1813460396190504}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -240,7 +225,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 62f30673ceae7f54fb12ffbf3d3fb75c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e01eeae3ed37c546839f74bdaf18970, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -250,12 +235,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!212 &212934006447897266
+--- !u!212 &212964997566856768
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1746791633250108}
+  m_GameObject: {fileID: 1436510774178218}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -285,7 +270,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 041bc3bdbb8b4ee4cb6e8b2245ba1aad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 884db1ef3446aea40842cf12a1c9a071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

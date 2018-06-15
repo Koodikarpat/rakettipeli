@@ -20,10 +20,11 @@ public class piikitLiikkumaan : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D mihinTormattiin)
     {
-        for (int i = 0; i < piikit.Length; i++)
-        {
-            piikit[i].GetComponent<piikki>().pitaakoLiikkua = true;
-            piikit[i].transform.parent = null;
-        }
+        if (mihinTormattiin.tag==("Player"))
+            for (int i = 0; i < piikit.Length; i++)
+            {
+                piikit[i].GetComponent<piikki>().pitaakoLiikkua = true;
+                piikit[i].transform.parent = null;
+            }
     }
 }
