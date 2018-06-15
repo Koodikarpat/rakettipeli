@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Anders.unity
     guid: 8d15991dd1025c64d9f0404714f39091
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 453112a435bfb1c4989cbd24afd39f0e
   m_configObjects: {}
