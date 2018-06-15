@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health_heh : MonoBehaviour {
+public class Huhuu : MonoBehaviour {
 
     float m_time = 0.0f;
     public int odotusAika;
