@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de94cddf4ff22b47bbee5a857634b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammus: {fileID: 1221034782137240, guid: 535e9c7376c656c43af401d31b7f698e, type: 2}
+  ammus: {fileID: 1244327146412468, guid: 96583ed974edc74439e0292ab88a477a, type: 2}
   ammusLahtee: {fileID: 4963825137303306}
 --- !u!114 &114248221168735756
 MonoBehaviour:
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de94cddf4ff22b47bbee5a857634b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammus: {fileID: 1221034782137240, guid: 535e9c7376c656c43af401d31b7f698e, type: 2}
+  ammus: {fileID: 1244327146412468, guid: 96583ed974edc74439e0292ab88a477a, type: 2}
   ammusLahtee: {fileID: 4113308598291242}
 --- !u!114 &114676901620280964
 MonoBehaviour:
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de94cddf4ff22b47bbee5a857634b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammus: {fileID: 1221034782137240, guid: 535e9c7376c656c43af401d31b7f698e, type: 2}
+  ammus: {fileID: 1244327146412468, guid: 96583ed974edc74439e0292ab88a477a, type: 2}
   ammusLahtee: {fileID: 4800734210810520}
 --- !u!114 &114688567149310558
 MonoBehaviour:
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de94cddf4ff22b47bbee5a857634b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammus: {fileID: 1221034782137240, guid: 535e9c7376c656c43af401d31b7f698e, type: 2}
+  ammus: {fileID: 1244327146412468, guid: 96583ed974edc74439e0292ab88a477a, type: 2}
   ammusLahtee: {fileID: 4820533816585234}
 --- !u!212 &212273561441678398
 SpriteRenderer:
