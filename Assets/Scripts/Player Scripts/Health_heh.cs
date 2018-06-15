@@ -8,6 +8,8 @@ public class Health_heh : MonoBehaviour {
     float m_time = 0.0f;
     public int odotusAika;
     Text huhuu;
+    int x;
+    int y;
 
     private void Start()
     {
@@ -27,8 +29,8 @@ public class Health_heh : MonoBehaviour {
                 m_time = 0.0f;
 
                 huhuu.enabled = false;
-                int x = Random.Range(50, 700);
-                int y = Random.Range(50, 250);
+                x = Random.Range(50, 700);
+                y = Random.Range(50, 250);
                 transform.position = new Vector3(x, y, 0);
             }
         }
