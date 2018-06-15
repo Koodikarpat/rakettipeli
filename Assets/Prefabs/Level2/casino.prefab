@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4161203588663352}
   - component: {fileID: 61977124891694190}
-  - component: {fileID: 114465275404603092}
   - component: {fileID: 95263411895624258}
+  - component: {fileID: 114013234904233162}
   m_Layer: 0
   m_Name: casino
   m_TagString: Untagged
@@ -162,7 +162,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114465275404603092
+--- !u!114 &114013234904233162
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   palkinto: {fileID: 1786699077750102, guid: a225cf6d2aca16d48988aaba557d8d6d, type: 2}
   panos: 10
-  "sy\xF6tt\xF6Nopeus": 40
+  "sy\xF6tt\xF6Nopeus": 20
 --- !u!114 &114620308474952174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,9 +187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9687e9450a79449ac15199c245410f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palkinto: {fileID: 0}
-  panos: 1
-  "sy\xF6tt\xF6Nopeus": 0
+  palkinto: {fileID: 1786699077750102, guid: a225cf6d2aca16d48988aaba557d8d6d, type: 2}
+  panos: 10
+  "sy\xF6tt\xF6Nopeus": 20
 --- !u!212 &212743574961195030
 SpriteRenderer:
   m_ObjectHideFlags: 1

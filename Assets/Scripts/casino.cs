@@ -26,10 +26,15 @@ public class casino : MonoBehaviour
         if (mihinTormattiin.CompareTag("Player") && !onkoPelattu)
         {
             kolikkoMaara = mihinTormattiin.GetComponent<kolikonKerays>().kolikkoLaskenta;
+            kolikonKerays kolikonKerays = mihinTormattiin.GetComponent<kolikonKerays>();
+
             numero = Random.Range(1, 5);
             Debug.Log("Saavuit casinoon");
                 if (kolikkoMaara >= panos)
                 {
+                kolikonKerays.kolikkoLaskenta = kolikonKerays.kolikkoLaskenta -10;
+                Debug.Log(kolikkoMaara);
+                Debug.Log(mihinTormattiin.GetComponent<kolikonKerays>().kolikkoLaskenta);
                 onkoPelattu = true;
                     if (numero == voittoNumero)
                     {

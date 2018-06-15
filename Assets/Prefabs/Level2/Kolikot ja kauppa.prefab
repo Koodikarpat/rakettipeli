@@ -623,8 +623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95113726fc040134db1940687ca8f9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  varasto: 1
-  hinta: 1
+  varasto: 2
+  hinta: 10
   tuote: {fileID: 1130559169833372, guid: 4b0927ed34c788d44b2d1a0f2309fbdc, type: 2}
   "sy\xF6tt\xF6Nopeus": 20
 --- !u!212 &212047425355177856
