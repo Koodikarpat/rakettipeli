@@ -20,13 +20,14 @@ public class TuhoaKuollut : MonoBehaviour {
 
         if (onkoKuollut == true)
         {   
-            if (IsBoss==true)
+            /* if (IsBoss==true)
             {
                 foreach (GameObject item in GameObject.FindGameObjectsWithTag("EnemyBullet"))
                 {
                     Destroy(item);
                 }
-                foreach (GameObject item in GameObject.FindGameObjectsWithTag("Enemy")){
+                foreach (GameObject item in GameObject.FindGameObjectsWithTag("Enemy"))
+                {
                     Destroy(item);
                 }
                 Instantiate(VictoryScreen, gameObject.transform.position, Quaternion.identity);
@@ -36,8 +37,8 @@ public class TuhoaKuollut : MonoBehaviour {
                 {
                     item.GetComponent<AmmusInstantiate>().enabled = false;
                 }
-            }
-            Destroy(gameObject);
+            }*/
+            //Destroy(gameObject);
         }
 	}
 }
