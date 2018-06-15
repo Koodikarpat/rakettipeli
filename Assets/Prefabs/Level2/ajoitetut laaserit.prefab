@@ -667,7 +667,7 @@ MonoBehaviour:
   ammus: {fileID: 1398287222072154}
   "t\xE4ht\xE4in": {fileID: 1783586894889994}
   kesto: 5
-  aloitusAika: 8
+  aloitusAika: 9
   cooldown: 6
 --- !u!114 &114384897553771776
 MonoBehaviour:
@@ -684,7 +684,7 @@ MonoBehaviour:
   ammus: {fileID: 1549802898646466}
   "t\xE4ht\xE4in": {fileID: 1568594063685424}
   kesto: 5
-  aloitusAika: 7
+  aloitusAika: 8
   cooldown: 6
 --- !u!114 &114409718649074352
 MonoBehaviour:

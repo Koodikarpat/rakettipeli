@@ -88,8 +88,9 @@ public class Raygun : MonoBehaviour
             {
                 ammus.SetActive(false);
                 aika = 0;
-                GetComponent<BoxCollider2D>().enabled = true;
+                
                 active = true;
+                GetComponent<BoxCollider2D>().enabled = true;
 
             }
 

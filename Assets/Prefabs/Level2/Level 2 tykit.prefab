@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 61860184337086028}
   m_Layer: 0
   m_Name: RaygunAmmus
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 61201173842865232}
   m_Layer: 0
   m_Name: RaygunAmmus
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 61222377234886692}
   m_Layer: 0
   m_Name: RaygunAmmus
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -731,7 +731,7 @@ GameObject:
   - component: {fileID: 61316838727420946}
   m_Layer: 0
   m_Name: RaygunAmmus
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 61520714009269948}
   m_Layer: 0
   m_Name: RaygunAmmus
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -907,7 +907,7 @@ GameObject:
   - component: {fileID: 61445888237227480}
   m_Layer: 0
   m_Name: RaygunAmmus
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2769,6 +2769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114012042017876068
 MonoBehaviour:
@@ -3104,6 +3105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114383692071106296
 MonoBehaviour:
@@ -3166,6 +3168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114427762336843176
 MonoBehaviour:
@@ -3281,6 +3284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114558233242743328
 MonoBehaviour:
@@ -3326,6 +3330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114655361664106156
 MonoBehaviour:
@@ -3390,6 +3395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114729495223814530
 MonoBehaviour:
@@ -3538,6 +3544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114945557712785968
 MonoBehaviour:
@@ -3550,6 +3557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d24bac274a07a4ca4d078651d51508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Matka: 10
   nopeus: 1
 --- !u!114 &114946934621466888
 MonoBehaviour:
