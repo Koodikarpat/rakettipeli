@@ -458,6 +458,67 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5c20124bc158984b96625d4efd9b2f1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &192337703 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1108008745065288, guid: 777f0aadf62ae21438fdd1e96230f0ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 1916859467}
+--- !u!114 &192337705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192337703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 5
+  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
+    type: 2}
+  onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
+  BossHasStarted: 0
+--- !u!61 &192337706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192337703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.05, y: 1.01}
+    newSize: {x: 1.05, y: 1.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.05, y: 1.01}
+  m_EdgeRadius: 0
+--- !u!114 &192337708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192337703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!1001 &203565319
 Prefab:
   m_ObjectHideFlags: 0
@@ -467,11 +528,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4491037353075490, guid: b191e948c544605479a3cc0f81f8415b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -598.1
+      value: -599.6
       objectReference: {fileID: 0}
     - target: {fileID: 4491037353075490, guid: b191e948c544605479a3cc0f81f8415b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 175.8
+      value: 175.1
       objectReference: {fileID: 0}
     - target: {fileID: 4491037353075490, guid: b191e948c544605479a3cc0f81f8415b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -721,7 +782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4171402500977860, guid: 53a88d391f2700e4a820c7fcf4ee8f0e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 149
+      value: 282.7
       objectReference: {fileID: 0}
     - target: {fileID: 4171402500977860, guid: 53a88d391f2700e4a820c7fcf4ee8f0e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -746,6 +807,35 @@ Prefab:
     - target: {fileID: 4171402500977860, guid: 53a88d391f2700e4a820c7fcf4ee8f0e, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974734206778802, guid: 53a88d391f2700e4a820c7fcf4ee8f0e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 53.677902
+      objectReference: {fileID: 0}
+    - target: {fileID: 114368069351517354, guid: 53a88d391f2700e4a820c7fcf4ee8f0e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.y"
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114469581244025840, guid: 53a88d391f2700e4a820c7fcf4ee8f0e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.y"
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623142478608410, guid: 53a88d391f2700e4a820c7fcf4ee8f0e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.y"
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810416188578820, guid: 53a88d391f2700e4a820c7fcf4ee8f0e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.y"
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114913973748463892, guid: 53a88d391f2700e4a820c7fcf4ee8f0e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.y"
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53a88d391f2700e4a820c7fcf4ee8f0e, type: 2}
@@ -2802,6 +2892,78 @@ Prefab:
     - target: {fileID: 4466930737423654, guid: 8e363a6bbc538ec468f897851e69547e, type: 2}
       propertyPath: m_RootOrder
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447713664384244, guid: 8e363a6bbc538ec468f897851e69547e, type: 2}
+      propertyPath: m_Name
+      value: sirkkeli (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807911545918464, guid: 8e363a6bbc538ec468f897851e69547e, type: 2}
+      propertyPath: m_Name
+      value: sirkkeli (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266658109750736, guid: 8e363a6bbc538ec468f897851e69547e, type: 2}
+      propertyPath: m_Name
+      value: sirkkeli (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441794025919326, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.x"
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114843372283174936, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.x"
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418500370519318, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: "ykk\xF6svektori.x"
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418500370519318, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: matka
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114843372283174936, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: matka
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441794025919326, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: matka
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441794025919326, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: nopee
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114843372283174936, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: nopee
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418500370519318, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: nopee
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441794025919326, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: nopeus
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114843372283174936, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: nopeus
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418500370519318, guid: 8e363a6bbc538ec468f897851e69547e,
+        type: 2}
+      propertyPath: nopeus
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e363a6bbc538ec468f897851e69547e, type: 2}
