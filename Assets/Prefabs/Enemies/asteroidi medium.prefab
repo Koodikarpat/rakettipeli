@@ -97,6 +97,7 @@ MonoBehaviour:
   onkoKuollut: 0
   MaxLoopTime: 3
   InvincibilityTime: 0.1
+  BossHasStarted: 0
 --- !u!114 &114685338902033850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1c0dcdd41b4994a990532cbf2e6d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidSpeed: 100
+  asteroidSpeed: 200
 --- !u!212 &212750355670790168
 SpriteRenderer:
   m_ObjectHideFlags: 1

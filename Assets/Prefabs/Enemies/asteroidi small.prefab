@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1c0dcdd41b4994a990532cbf2e6d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidSpeed: 100
+  asteroidSpeed: 200
 --- !u!114 &114633273902630066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a242223bf82028d4f8ce56c9cfab5109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBoss: 0
+  VictoryScreen: {fileID: 0}
 --- !u!114 &114936960842634208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,6 +122,7 @@ MonoBehaviour:
   onkoKuollut: 0
   MaxLoopTime: 3
   InvincibilityTime: 0.1
+  BossHasStarted: 0
 --- !u!212 &212786376687265364
 SpriteRenderer:
   m_ObjectHideFlags: 1
