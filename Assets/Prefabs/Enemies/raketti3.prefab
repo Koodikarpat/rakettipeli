@@ -22,6 +22,9 @@ GameObject:
   - component: {fileID: 212443166940638082}
   - component: {fileID: 61328379621770248}
   - component: {fileID: 114383626599607988}
+  - component: {fileID: 114839040094236378}
+  - component: {fileID: 114011146985015926}
+  - component: {fileID: 114349583352911506}
   m_Layer: 0
   m_Name: raketti3
   m_TagString: Untagged
@@ -67,6 +70,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &114011146985015926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017957249495728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d0b5eb7d0f9af48ab5417637b4e09e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VihollisenAmmusPrefab: {fileID: 1221034782137240, guid: 535e9c7376c656c43af401d31b7f698e,
+    type: 2}
+--- !u!114 &114349583352911506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017957249495728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798660bbe31dd134a9343816878bb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPoints: 5
+  ExplosionParticle: {fileID: 1437031446754860, guid: 6fc63e4139cdbf442827cb21b9e84bbb,
+    type: 2}
+  onkoKuollut: 0
+  MaxLoopTime: 0
+  InvincibilityTime: 0
+  BossHasStarted: 0
 --- !u!114 &114383626599607988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78,6 +112,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a46aef4c90f81a4abe54a285fc2be7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114839040094236378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017957249495728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71866057c53fac145b0124356e5297ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance: 5
+  Speed: 2
 --- !u!212 &212443166940638082
 SpriteRenderer:
   m_ObjectHideFlags: 1

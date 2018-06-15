@@ -13,9 +13,12 @@ public class EnemyController2 : MonoBehaviour
     public Transform Enemy;
     Vector2 suunta;
     float kulma;
+    
 
     private void Start()
     {
+        transform.DetachChildren();
+
         targetPosition = GameObject.FindWithTag("Player");
     }
 
@@ -37,7 +40,7 @@ public class EnemyController2 : MonoBehaviour
 
         Range = Vector2.Distance(transform.position, Player.position);
 
-        if (Range > Distance)
+        if (Range < Distance)
         {
             transform.position = Vector2.MoveTowards(transform.position, Player.position, Speed * Time.deltaTime);
         }
@@ -45,6 +48,7 @@ public class EnemyController2 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D Tormays)
     {
+        
         if (Tormays.gameObject.tag == "Player")
         {
             gameObject.SetActive(false);

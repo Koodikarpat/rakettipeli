@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour {
+public class EnemyControllerVaaka : MonoBehaviour {
 
     private Vector2 startPos;
 
@@ -10,18 +10,16 @@ public class EnemyController : MonoBehaviour {
     public float Speed = 2.0f;
     private int Suunta;
 
-
     // Use this for initialization
     void Start () {
         startPos = transform.position;
     }
+	
+	// Update is called once per frame
+	void Update () {
 
-    // Update is called once per frame
-    void Update()
-    {
         Vector2 v = startPos;
-        v.y += Distance * Mathf.Sin(Time.time * Speed);
+        v.x += Distance * Mathf.Sin(Time.time * Speed);
         transform.position = v;
     }
-
 }
