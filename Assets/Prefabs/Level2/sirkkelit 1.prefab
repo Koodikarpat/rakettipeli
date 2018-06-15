@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 58328005456179726}
   - component: {fileID: 58241771933822188}
   - component: {fileID: 114420948586818164}
-  - component: {fileID: 114328135654621146}
+  - component: {fileID: 114153021756225744}
   m_Layer: 11
   m_Name: sirkkeli (1)
   m_TagString: Untagged
@@ -45,9 +45,9 @@ GameObject:
   - component: {fileID: 58934473352631908}
   - component: {fileID: 58430166398948382}
   - component: {fileID: 114840423275466986}
-  - component: {fileID: 114942758802736942}
+  - component: {fileID: 114307009684889244}
   m_Layer: 11
-  m_Name: sirkkeli
+  m_Name: sirkkeli (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,9 +66,9 @@ GameObject:
   - component: {fileID: 58116019072806608}
   - component: {fileID: 58206884200998022}
   - component: {fileID: 114898525472805854}
-  - component: {fileID: 114154780623548120}
+  - component: {fileID: 114924856379985922}
   m_Layer: 11
-  m_Name: sirkkeli (2)
+  m_Name: sirkkeli (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 58479423227609872}
   - component: {fileID: 58489979090848986}
   - component: {fileID: 114867739464185886}
-  - component: {fileID: 114836343382891360}
+  - component: {fileID: 114607461809157110}
   m_Layer: 11
   m_Name: sirkkeli 2
   m_TagString: Untagged
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 58946795336145034}
   - component: {fileID: 58231685596452158}
   - component: {fileID: 114371499758857098}
-  - component: {fileID: 114264391084206658}
+  - component: {fileID: 114194903139613778}
   m_Layer: 11
   m_Name: sirkkeli 3
   m_TagString: Untagged
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 58895151664139514}
   - component: {fileID: 58038486558373200}
   - component: {fileID: 114692004219105460}
-  - component: {fileID: 114523601746103808}
+  - component: {fileID: 114428033216310214}
   m_Layer: 11
   m_Name: sirkkeli
   m_TagString: Untagged
@@ -166,9 +166,9 @@ GameObject:
   - component: {fileID: 58978193158550564}
   - component: {fileID: 58258942979959876}
   - component: {fileID: 114471773824628068}
-  - component: {fileID: 114461186334770292}
+  - component: {fileID: 114101294471753066}
   m_Layer: 11
-  m_Name: sirkkeli (1)
+  m_Name: sirkkeli (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -513,12 +513,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114154780623548120
+--- !u!114 &114101294471753066
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1447713664384244}
+  m_GameObject: {fileID: 1807911545918464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114153021756225744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142013946569398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114194903139613778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1569530052000454}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
@@ -539,23 +561,12 @@ MonoBehaviour:
   "ykk\xF6svektori": {x: 0.06, y: 0, z: 0}
   nopee: 5
   matka: 1
---- !u!114 &114264391084206658
+--- !u!114 &114307009684889244
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569530052000454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114328135654621146
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142013946569398}
+  m_GameObject: {fileID: 1266658109750736}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
@@ -598,10 +609,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1a463bb889918499a457d757883237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 100
-  "ykk\xF6svektori": {x: 0.06, y: 0, z: 0}
-  nopee: 5
-  matka: 1
+  nopeus: 200
+  "ykk\xF6svektori": {x: 1, y: 0, z: 0}
+  nopee: 20
+  matka: 0.9
 --- !u!114 &114420948586818164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -611,6 +622,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114428033216310214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796977520669104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114441794025919326
@@ -624,21 +646,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1a463bb889918499a457d757883237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 100
-  "ykk\xF6svektori": {x: 0.06, y: 0, z: 0}
-  nopee: 5
-  matka: 1
---- !u!114 &114461186334770292
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807911545918464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  nopeus: 200
+  "ykk\xF6svektori": {x: 1, y: 0, z: 0}
+  nopee: 20
+  matka: 0.9
 --- !u!114 &114471773824628068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -650,12 +661,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114523601746103808
+--- !u!114 &114607461809157110
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796977520669104}
+  m_GameObject: {fileID: 1468359723158322}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
@@ -735,10 +746,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1a463bb889918499a457d757883237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 100
-  "ykk\xF6svektori": {x: -0.06, y: 0, z: 0}
-  nopee: 5
-  matka: 1
+  nopeus: 200
+  "ykk\xF6svektori": {x: -1, y: 0, z: 0}
+  nopee: 20
+  matka: 0.9
 --- !u!114 &114867739464185886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -761,12 +772,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114942758802736942
+--- !u!114 &114924856379985922
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1266658109750736}
+  m_GameObject: {fileID: 1447713664384244}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
