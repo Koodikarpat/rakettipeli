@@ -151,7 +151,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1075190417781712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -614, y: 149, z: 0.0234375}
+  m_LocalPosition: {x: -614, y: 282.7, z: 0.0234375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4974734206778802}
@@ -409,9 +409,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nopeus: 100
-  "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  "ykk\xF6svektori": {x: 0, y: -1, z: 0}
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114369802223960232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -435,9 +435,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nopeus: 100
-  "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  "ykk\xF6svektori": {x: 0, y: -1, z: 0}
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114550308633535824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nopeus: 100
-  "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  "ykk\xF6svektori": {x: 0, y: -1, z: 0}
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114676017986934266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,9 +509,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nopeus: 100
-  "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  "ykk\xF6svektori": {x: 0, y: -1, z: 0}
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114894170888983290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -535,9 +535,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nopeus: 100
-  "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  "ykk\xF6svektori": {x: 0, y: -1, z: 0}
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114918219788394832
 MonoBehaviour:
   m_ObjectHideFlags: 1

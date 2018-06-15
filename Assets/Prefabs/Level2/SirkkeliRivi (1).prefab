@@ -430,10 +430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1a463bb889918499a457d757883237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nopeus: 100
+  nopeus: 200
   "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114540405909771026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -491,8 +491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nopeus: 100
   "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114835115007747128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -506,8 +506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nopeus: 100
   "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114852997066328682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -532,8 +532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nopeus: 100
   "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  nopee: 7.5
+  matka: 18
 --- !u!114 &114971643509330544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -547,8 +547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nopeus: 100
   "ykk\xF6svektori": {x: 0, y: 1, z: 0}
-  nopee: 0.1
-  matka: 22.9
+  nopee: 7.5
+  matka: 18
 --- !u!212 &212235248102508576
 SpriteRenderer:
   m_ObjectHideFlags: 1
