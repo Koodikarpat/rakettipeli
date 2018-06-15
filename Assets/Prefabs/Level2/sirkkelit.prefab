@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 58614981099991990}
   - component: {fileID: 58904895180911992}
   - component: {fileID: 114183636762474244}
+  - component: {fileID: 114345345163759000}
   m_Layer: 11
   m_Name: sirkkeli 3
   m_TagString: Untagged
@@ -44,6 +45,7 @@ GameObject:
   - component: {fileID: 58996092740946264}
   - component: {fileID: 58232955470634852}
   - component: {fileID: 114825725591887130}
+  - component: {fileID: 114821354784959594}
   m_Layer: 11
   m_Name: sirkkeli 2
   m_TagString: Untagged
@@ -64,6 +66,7 @@ GameObject:
   - component: {fileID: 58234411446855036}
   - component: {fileID: 58035483838402688}
   - component: {fileID: 114543923010769846}
+  - component: {fileID: 114199689917775908}
   m_Layer: 11
   m_Name: sirkkeli (1)
   m_TagString: Untagged
@@ -100,6 +103,7 @@ GameObject:
   - component: {fileID: 58138781621177922}
   - component: {fileID: 58237055188318590}
   - component: {fileID: 114574554359526964}
+  - component: {fileID: 114823506311422360}
   m_Layer: 11
   m_Name: sirkkeli
   m_TagString: Untagged
@@ -340,6 +344,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114199689917775908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547286209700324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114345345163759000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1012135262574638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114543923010769846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -407,6 +433,28 @@ MonoBehaviour:
   "ykk\xF6svektori": {x: 0.06, y: 0, z: 0}
   nopee: 5
   matka: 1
+--- !u!114 &114821354784959594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175543600658570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114823506311422360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986498096419900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114825725591887130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -453,7 +501,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -498,7 +546,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -543,7 +591,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -588,7 +636,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

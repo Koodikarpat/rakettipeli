@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 58708301486235428}
   - component: {fileID: 58492645729417350}
   - component: {fileID: 114550308633535824}
+  - component: {fileID: 114894170888983290}
   m_Layer: 11
   m_Name: sirkkeli
   m_TagString: Untagged
@@ -59,6 +60,7 @@ GameObject:
   - component: {fileID: 58882978872816164}
   - component: {fileID: 58828456786314658}
   - component: {fileID: 114676017986934266}
+  - component: {fileID: 114918219788394832}
   m_Layer: 11
   m_Name: sirkkeli (3)
   m_TagString: Untagged
@@ -79,6 +81,7 @@ GameObject:
   - component: {fileID: 58256295880394696}
   - component: {fileID: 58952342353532832}
   - component: {fileID: 114369802223960232}
+  - component: {fileID: 114047483249840752}
   m_Layer: 11
   m_Name: sirkkeli (2)
   m_TagString: Untagged
@@ -99,6 +102,7 @@ GameObject:
   - component: {fileID: 58411035366220686}
   - component: {fileID: 58555519249842824}
   - component: {fileID: 114200522883587218}
+  - component: {fileID: 114330608906117412}
   m_Layer: 11
   m_Name: sirkkeli (1)
   m_TagString: Untagged
@@ -119,6 +123,7 @@ GameObject:
   - component: {fileID: 58442437322651670}
   - component: {fileID: 58956564089088104}
   - component: {fileID: 114733209630526900}
+  - component: {fileID: 114563742460449840}
   m_Layer: 11
   m_Name: sirkkeli (4)
   m_TagString: Untagged
@@ -359,6 +364,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4
+--- !u!114 &114047483249840752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409737413098326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114200522883587218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -368,6 +384,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114330608906117412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1675391164930862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114368069351517354
@@ -422,6 +449,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0d7d2fff0440742972672d824be8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114563742460449840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770905947684238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114623142478608410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -474,6 +512,17 @@ MonoBehaviour:
   "ykk\xF6svektori": {x: 0, y: 1, z: 0}
   nopee: 0.1
   matka: 22.9
+--- !u!114 &114894170888983290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077352295822088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114913973748463892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -489,6 +538,17 @@ MonoBehaviour:
   "ykk\xF6svektori": {x: 0, y: 1, z: 0}
   nopee: 0.1
   matka: 22.9
+--- !u!114 &114918219788394832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1289561031761920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc753f9602505e408fbb083437c89e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212395098769348956
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -524,7 +584,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -569,7 +629,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -614,7 +674,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -659,7 +719,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -704,7 +764,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a1b633595d43e2e49a5121b80c26e9e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91d6ee525035b8458077f7330c61c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
