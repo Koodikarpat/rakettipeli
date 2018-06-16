@@ -45,12 +45,12 @@ public class RocketBossStages : MonoBehaviour {
 	}
 
 
-    void InstantiateExplosion()
+    void InstantiateExplosion() //Spawnaa räjähdysefektin bossin satunnaiseen kohtaan.
     {
         Instantiate(Explosion, new Vector3(Random.Range(gameObject.transform.position.x - 5, gameObject.transform.position.x + 5), Random.Range(gameObject.transform.position.y - 5, gameObject.transform.position.y + 5), -1f), Quaternion.Euler(0,180,0));
     }
 
-    IEnumerator StartStageTwo()
+    IEnumerator StartStageTwo() //Aloittaa bossin toisen vaiheen, jossa raygunit tulevat mukaan.
     {
         Camera = GameObject.FindGameObjectWithTag("MainCamera");
         Camera.GetComponent<CameraController>().enabled = false;
@@ -92,7 +92,7 @@ public class RocketBossStages : MonoBehaviour {
 
     }
 
-    IEnumerator BossExplosion()
+    IEnumerator BossExplosion() //Bossin "kuolema-animaatio". Kun bossin elämät menevät nollille, bossille syntyy eri kohttin räjähdyksiä ennen kuin se oikeasti kuolee.
     {
         print("Boss exploded!");
         while (ExplodedTimes < ExplosionTimes)

@@ -8,6 +8,8 @@ public class GameOver : MonoBehaviour {
     public GameObject ExplosionSprite;
     public string[] tuhottavatObjectit;
     List<GameObject> CanvasesToDestroyWhenGameOver = new List<GameObject>();
+
+    //Tämä scripti spawnaa GameOver-näytön pelaajan kuollessa ja tuhoaa kaikki annetut canvasit.
     
     void Start () {
         foreach (string tuhottavanObjectinNimi in tuhottavatObjectit)

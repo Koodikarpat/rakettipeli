@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class BGScale : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+	//Tämä scripti muuttaa taustan kokoa kameran koon mukaan. Tätä ei kannata käyttää animaatioissa tai siirtymissä.
+
+
 	void Update () {
         float scale = gameObject.transform.parent.GetComponentInChildren<Camera>().orthographicSize;
         //float scale = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().orthographicSize;

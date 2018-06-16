@@ -8,6 +8,8 @@ public class RocketBossStart : MonoBehaviour
 
     private bool HasBeenActivated;
 
+    //Tämä scripti sisältää kaikki funktiot, jotka pyöritetään bossin syntyessä 
+
     private void Start()
     {
         HasBeenActivated = false;
@@ -16,7 +18,6 @@ public class RocketBossStart : MonoBehaviour
             child.gameObject.SetActive(false);
         }
     }
-    // Update is called once per frame 
     void Update()
     {
         if (HasBeenActivated == false)
@@ -31,10 +32,6 @@ public class RocketBossStart : MonoBehaviour
                 GameObject.FindGameObjectWithTag("BossActivation").SetActive(false);
                 HasBeenActivated = true;
             }
-        }
-        if (GetComponent<EnemyHealth>().HealthPoints <= 0)
-        {
-
         }
     }
 }

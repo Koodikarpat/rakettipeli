@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
 
     private GameObject Rocket;
-    public float CameraDistance;
+    public float CameraDistance; //Tällä arvolla ei ole oikeastaan väliä. Sen täytyy olla suurempi kuin nolla, jotta kenttä näkyisi ja suurempi kuin kaksi, jotta räjähdysefektit näkyisivät oikein.
     public float CameraSizeAtStart;
     public float cameraPosition;
     public float smoothing;

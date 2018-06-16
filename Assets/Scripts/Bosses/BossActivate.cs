@@ -27,7 +27,7 @@ public class BossActivate : MonoBehaviour {
 
     
 
-    IEnumerator ActivateBoss()
+    IEnumerator ActivateBoss() //Tätä "animaatiota" käytetään, jos BossActivationille ei ole annettu custom animaatiota.
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         Player.GetComponent<AudioSource>().Stop();
@@ -60,7 +60,7 @@ public class BossActivate : MonoBehaviour {
         
     }
 
-    public void OnAnimationEnd()
+    public void OnAnimationEnd() //Funktio, jota käytetään custom animaation jälkeen.
     {
         foreach (AmmusInstantiate item in GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<AmmusInstantiate>())
         {

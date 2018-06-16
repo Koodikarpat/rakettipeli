@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 
-//Poistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! JA ÄLÄ KOSKE, KOSKA TÄÄ TUHOO KAIKEN!!!!!!!!!!! 
+//Poistettu käytöstä. ÄLÄ KÄYTÄ MIHINKÄÄN!!! JA ÄLÄ KOSKE, KOSKA TÄÄ TUHOO KAIKEN!!!!!!!!!!! Jos käytät tätä scriptiä, vapautat helvetin maan päälle.
 
 /*public class PlayerController : MonoBehaviour
 {

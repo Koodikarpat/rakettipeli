@@ -10,10 +10,6 @@ public class BossHealthBar : MonoBehaviour {
     public GameObject InstantiatedHealthBarCanvas;
     public string Text;
 
-    private void Start()
-    {
-    }
-
 
     private void Update()
     {
